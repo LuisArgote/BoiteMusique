@@ -47,7 +47,16 @@ static const uint32_t notes_arr[] =
     512418,     // FA4
     459182,     // SOL4
     409089,     // LA4
-    364460     // SI4
+    364460,     // SI4
+
+    /*===== 5 octave ======*/
+    343996,     // DO5
+    306476,     // RE5
+    273032,     // MI5
+    256209,     // FA5
+    229591,     // SOL5
+    204545,     // LA5
+    182230      // SI5
 };
 
 extern void delay(uint32_t ms)
@@ -66,17 +75,18 @@ extern void delay(uint32_t ms)
 extern void delay_par_duree(duree Duree)
 {
     // Erreur faut mettre (30 * 1000 ) / tempo
+    uint32_t duree_noire = 60000/tempo;
     switch (Duree)
     {
     case CROCHE:
 
-        delay(30000 / tempo);
+        delay(duree_noire / 2);
         break;
     case NOIRE:
-        delay(60000 / tempo);
+        delay(duree_noire);
         break;
     case BLANCHE:
-        delay(120000 / tempo);
+        delay(2 * duree_noire);
         break;
     default:
         break;

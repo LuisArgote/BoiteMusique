@@ -13,7 +13,7 @@ int main() {
   init_timer_buzzer();
   while (1)
   {
-	  au_clair_de_la_lune();
+	  die_forelle();
   }
   
   return 0;

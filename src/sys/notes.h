@@ -21,7 +21,16 @@ typedef enum{
     FA4,
     SOL4,
     LA4,
-    SI4
+    SI4,
+
+/* ====== 5 octave ======*/
+    DO5,
+    RE5,
+    MI5,
+    FA5,
+    SOL5,
+    LA5,
+    SI5
 }notes;
 
 

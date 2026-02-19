@@ -8,4 +8,9 @@
  */
 void au_clair_de_la_lune();
 
+void megalovania();
+
+void die_forelle();
+
+
 #endif

@@ -4599,21 +4599,21 @@
  3068              		.ident	"GCC: (GNU Tools for STM32 13.3.rel1.20250523-0900) 13.3.1 20240614"
 DEFINED SYMBOLS
                             *ABS*:00000000 serial_io.c
-     /tmp/cc8Fy6sZ.s:19     .text:00000000 $t
-     /tmp/cc8Fy6sZ.s:25     .text:00000000 _putchar
-     /tmp/cc8Fy6sZ.s:52     .text:0000000c $d
-     /tmp/cc8Fy6sZ.s:56     .text:00000010 $t
-     /tmp/cc8Fy6sZ.s:62     .text:00000010 _getchar
-     /tmp/cc8Fy6sZ.s:89     .text:00000020 $d
-     /tmp/cc8Fy6sZ.s:93     .text:00000024 $t
-     /tmp/cc8Fy6sZ.s:99     .text:00000024 enable_USART2_GPIO
-     /tmp/cc8Fy6sZ.s:158    .text:00000050 $d
-     /tmp/cc8Fy6sZ.s:163    .text:00000058 $t
-     /tmp/cc8Fy6sZ.s:169    .text:00000058 setup_USART2
-     /tmp/cc8Fy6sZ.s:243    .text:00000084 $d
-     /tmp/cc8Fy6sZ.s:248    .text:0000008c $t
-     /tmp/cc8Fy6sZ.s:254    .text:0000008c serial_io_init
-     /tmp/cc8Fy6sZ.s:314    .text:000000cc $d
+     /tmp/ccfmf7Ty.s:19     .text:00000000 $t
+     /tmp/ccfmf7Ty.s:25     .text:00000000 _putchar
+     /tmp/ccfmf7Ty.s:52     .text:0000000c $d
+     /tmp/ccfmf7Ty.s:56     .text:00000010 $t
+     /tmp/ccfmf7Ty.s:62     .text:00000010 _getchar
+     /tmp/ccfmf7Ty.s:89     .text:00000020 $d
+     /tmp/ccfmf7Ty.s:93     .text:00000024 $t
+     /tmp/ccfmf7Ty.s:99     .text:00000024 enable_USART2_GPIO
+     /tmp/ccfmf7Ty.s:158    .text:00000050 $d
+     /tmp/ccfmf7Ty.s:163    .text:00000058 $t
+     /tmp/ccfmf7Ty.s:169    .text:00000058 setup_USART2
+     /tmp/ccfmf7Ty.s:243    .text:00000084 $d
+     /tmp/ccfmf7Ty.s:248    .text:0000008c $t
+     /tmp/ccfmf7Ty.s:254    .text:0000008c serial_io_init
+     /tmp/ccfmf7Ty.s:314    .text:000000cc $d
 
 UNDEFINED SYMBOLS
 USART2
