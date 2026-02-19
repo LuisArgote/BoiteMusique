@@ -15,7 +15,7 @@ SRCS += src/sys/clock.c src/sys/power.c src/sys/serial_io.c
 SRCS += src/sys/init.c src/sys/syscalls.c
 
 #Mes fonctions
-SRCS += src/sys/buzzer.c src/sys/notes.c src/sys/timer.c
+SRCS +=  src/sys/notes.c src/sys/timer.c src/sys/musique.c
 
 
 SRCS += src/main.c
@@ -26,7 +26,7 @@ CDEPS += src/sys/init.h src/sys/devices.h
 CDEPS += src/sys/cm4.h src/sys/cmsis_gcc.h
 
 #Mes fonctions
-CDEPS += src/sys/buzzer.h src/sys/notes.h src/sys/timer.h
+CDEPS +=  src/sys/notes.h src/sys/timer.h src/sys/musique.h
 
 # List of additional includes (directories)
 DIRFLAGS += 

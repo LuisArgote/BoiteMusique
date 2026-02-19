@@ -1914,7 +1914,7 @@
  756 039b 09       		.uleb128 0x9
  757 039c 2D000000 		.4byte	0x2d
  758 03a0 06       		.byte	0x6
- 759 03a1 07       		.byte	0x7
+ 759 03a1 09       		.byte	0x9
  760 03a2 B3030000 		.4byte	0x3b3
  761 03a6 02       		.uleb128 0x2
  762 03a7 C7040000 		.4byte	.LASF65
@@ -1926,13 +1926,13 @@
  768 03b3 06       		.uleb128 0x6
  769 03b4 B4030000 		.4byte	.LASF67
  770 03b8 06       		.byte	0x6
- 771 03b9 07       		.byte	0x7
+ 771 03b9 09       		.byte	0x9
  772 03ba 2A       		.byte	0x2a
  773 03bb 9B030000 		.4byte	0x39b
  774 03bf 09       		.uleb128 0x9
  775 03c0 2D000000 		.4byte	0x2d
  776 03c4 06       		.byte	0x6
- 777 03c5 08       		.byte	0x8
+ 777 03c5 0A       		.byte	0xa
  778 03c6 E3030000 		.4byte	0x3e3
  779 03ca 02       		.uleb128 0x2
  780 03cb 45050000 		.4byte	.LASF68
@@ -1950,13 +1950,13 @@
  792 03e3 12       		.uleb128 0x12
  793 03e4 535700   		.ascii	"SW\000"
  794 03e7 06       		.byte	0x6
- 795 03e8 08       		.byte	0x8
+ 795 03e8 0A       		.byte	0xa
  796 03e9 38       		.byte	0x38
  797 03ea BF030000 		.4byte	0x3bf
  798 03ee 09       		.uleb128 0x9
  799 03ef 2D000000 		.4byte	0x2d
  800 03f3 06       		.byte	0x6
- 801 03f4 09       		.byte	0x9
+ 801 03f4 0B       		.byte	0xb
  802 03f5 12040000 		.4byte	0x412
  803 03f9 02       		.uleb128 0x2
  804 03fa 83040000 		.4byte	.LASF72
@@ -1974,13 +1974,13 @@
  816 0412 06       		.uleb128 0x6
  817 0413 42040000 		.4byte	.LASF76
  818 0417 06       		.byte	0x6
- 819 0418 09       		.byte	0x9
+ 819 0418 0B       		.byte	0xb
  820 0419 3C       		.byte	0x3c
  821 041a EE030000 		.4byte	0x3ee
  822 041e 09       		.uleb128 0x9
  823 041f 2D000000 		.4byte	0x2d
  824 0423 06       		.byte	0x6
- 825 0424 0A       		.byte	0xa
+ 825 0424 0C       		.byte	0xc
  826 0425 42040000 		.4byte	0x442
  827 0429 02       		.uleb128 0x2
  828 042a 5D030000 		.4byte	.LASF77
@@ -1998,7 +1998,7 @@
  840 0442 06       		.uleb128 0x6
  841 0443 72040000 		.4byte	.LASF81
  842 0447 06       		.byte	0x6
- 843 0448 0A       		.byte	0xa
+ 843 0448 0C       		.byte	0xc
  844 0449 3C       		.byte	0x3c
  845 044a 1E040000 		.4byte	0x41e
  846 044e 09       		.uleb128 0x9
@@ -2032,14 +2032,14 @@
  874 0485 10       		.uleb128 0x10
  875 0486 E4030000 		.4byte	.LASF86
  876 048a 06       		.byte	0x6
- 877 048b 17       		.byte	0x17
+ 877 048b 19       		.byte	0x19
  878 048c 92040000 		.4byte	0x492
  879 0490 11       		.uleb128 0x11
  880 0491 00       		.byte	0
  881 0492 0A       		.uleb128 0xa
  882 0493 11020000 		.4byte	.LASF87
  883 0497 06       		.byte	0x6
- 884 0498 10       		.byte	0x10
+ 884 0498 12       		.byte	0x12
  885 0499 A3040000 		.4byte	0x4a3
  886 049d 04       		.uleb128 0x4
  887 049e E3030000 		.4byte	0x3e3
@@ -2047,7 +2047,7 @@
  889 04a3 0A       		.uleb128 0xa
  890 04a4 50010000 		.4byte	.LASF88
  891 04a8 06       		.byte	0x6
- 892 04a9 11       		.byte	0x11
+ 892 04a9 13       		.byte	0x13
  893 04aa C3040000 		.4byte	0x4c3
  894 04ae 04       		.uleb128 0x4
  895 04af 90000000 		.4byte	0x90
@@ -2061,7 +2061,7 @@
  903 04c3 0A       		.uleb128 0xa
  904 04c4 66030000 		.4byte	.LASF89
  905 04c8 06       		.byte	0x6
- 906 04c9 0C       		.byte	0xc
+ 906 04c9 0E       		.byte	0xe
  907 04ca ED040000 		.4byte	0x4ed
  908 04ce 04       		.uleb128 0x4
  909 04cf B3030000 		.4byte	0x3b3
@@ -2094,7 +2094,7 @@
  936 050b 0A       		.uleb128 0xa
  937 050c 7C010000 		.4byte	.LASF92
  938 0510 06       		.byte	0x6
- 939 0511 16       		.byte	0x16
+ 939 0511 18       		.byte	0x18
  940 0512 2B050000 		.4byte	0x52b
  941 0516 04       		.uleb128 0x4
  942 0517 12040000 		.4byte	0x412
@@ -3269,18 +3269,18 @@
  1875              		.ident	"GCC: (GNU Tools for STM32 13.3.rel1.20250523-0900) 13.3.1 20240614"
 DEFINED SYMBOLS
                             *ABS*:00000000 init.c
-     /tmp/ccKLej2Z.s:19     .text:00000000 $t
-     /tmp/ccKLej2Z.s:25     .text:00000000 set_FLASH_latency
-     /tmp/ccKLej2Z.s:74     .text:00000030 $d
-     /tmp/ccKLej2Z.s:78     .text:00000034 $t
-     /tmp/ccKLej2Z.s:84     .text:00000034 fpu_init
-     /tmp/ccKLej2Z.s:117    .text:00000044 $d
-     /tmp/ccKLej2Z.s:121    .text:00000048 $t
-     /tmp/ccKLej2Z.s:127    .text:00000048 enable_io_compensation
-     /tmp/ccKLej2Z.s:181    .text:00000068 $d
-     /tmp/ccKLej2Z.s:186    .text:00000070 $t
-     /tmp/ccKLej2Z.s:192    .text:00000070 clock_init
-     /tmp/ccKLej2Z.s:265    .text:000000c2 software_init_hook
+     /tmp/ccbDZEoy.s:19     .text:00000000 $t
+     /tmp/ccbDZEoy.s:25     .text:00000000 set_FLASH_latency
+     /tmp/ccbDZEoy.s:74     .text:00000030 $d
+     /tmp/ccbDZEoy.s:78     .text:00000034 $t
+     /tmp/ccbDZEoy.s:84     .text:00000034 fpu_init
+     /tmp/ccbDZEoy.s:117    .text:00000044 $d
+     /tmp/ccbDZEoy.s:121    .text:00000048 $t
+     /tmp/ccbDZEoy.s:127    .text:00000048 enable_io_compensation
+     /tmp/ccbDZEoy.s:181    .text:00000068 $d
+     /tmp/ccbDZEoy.s:186    .text:00000070 $t
+     /tmp/ccbDZEoy.s:192    .text:00000070 clock_init
+     /tmp/ccbDZEoy.s:265    .text:000000c2 software_init_hook
 
 UNDEFINED SYMBOLS
 FLASH

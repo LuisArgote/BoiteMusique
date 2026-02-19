@@ -2190,9 +2190,9 @@
  922              		.ident	"GCC: (GNU Tools for STM32 13.3.rel1.20250523-0900) 13.3.1 20240614"
 DEFINED SYMBOLS
                             *ABS*:00000000 buzzer.c
-     /tmp/ccfbIanl.s:19     .text:00000000 $t
-     /tmp/ccfbIanl.s:25     .text:00000000 enable_buzzer
-     /tmp/ccfbIanl.s:90     .text:00000034 $d
+     /tmp/ccV9iktz.s:19     .text:00000000 $t
+     /tmp/ccV9iktz.s:25     .text:00000000 enable_buzzer
+     /tmp/ccV9iktz.s:90     .text:00000034 $d
 
 UNDEFINED SYMBOLS
 RCC

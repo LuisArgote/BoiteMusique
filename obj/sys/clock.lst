@@ -2320,7 +2320,7 @@
  1014 0098 63000000 		.4byte	0x63
  1015 009c 0B       		.uleb128 0xb
  1016 009d 34000000 		.4byte	0x34
- 1017 00a1 07       		.byte	0x7
+ 1017 00a1 09       		.byte	0x9
  1018 00a2 B3000000 		.4byte	0xb3
  1019 00a6 03       		.uleb128 0x3
  1020 00a7 BE000000 		.4byte	.LASF13
@@ -2332,12 +2332,12 @@
  1026 00b3 09       		.uleb128 0x9
  1027 00b4 FF030000 		.4byte	.LASF15
  1028 00b8 06       		.byte	0x6
- 1029 00b9 07       		.byte	0x7
+ 1029 00b9 09       		.byte	0x9
  1030 00ba 2A       		.byte	0x2a
  1031 00bb 9C000000 		.4byte	0x9c
  1032 00bf 0B       		.uleb128 0xb
  1033 00c0 34000000 		.4byte	0x34
- 1034 00c4 08       		.byte	0x8
+ 1034 00c4 0A       		.byte	0xa
  1035 00c5 E2000000 		.4byte	0xe2
  1036 00c9 03       		.uleb128 0x3
  1037 00ca 78010000 		.4byte	.LASF16
@@ -2355,12 +2355,12 @@
  1049 00e2 18       		.uleb128 0x18
  1050 00e3 535700   		.ascii	"SW\000"
  1051 00e6 06       		.byte	0x6
- 1052 00e7 08       		.byte	0x8
+ 1052 00e7 0A       		.byte	0xa
  1053 00e8 38       		.byte	0x38
  1054 00e9 BF000000 		.4byte	0xbf
  1055 00ed 0B       		.uleb128 0xb
  1056 00ee 34000000 		.4byte	0x34
- 1057 00f2 09       		.byte	0x9
+ 1057 00f2 0B       		.byte	0xb
  1058 00f3 10010000 		.4byte	0x110
  1059 00f7 03       		.uleb128 0x3
  1060 00f8 4F020000 		.4byte	.LASF20
@@ -2378,12 +2378,12 @@
  1072 0110 09       		.uleb128 0x9
  1073 0111 53000000 		.4byte	.LASF24
  1074 0115 06       		.byte	0x6
- 1075 0116 09       		.byte	0x9
+ 1075 0116 0B       		.byte	0xb
  1076 0117 3C       		.byte	0x3c
  1077 0118 ED000000 		.4byte	0xed
  1078 011c 0B       		.uleb128 0xb
  1079 011d 34000000 		.4byte	0x34
- 1080 0121 0A       		.byte	0xa
+ 1080 0121 0C       		.byte	0xc
  1081 0122 3F010000 		.4byte	0x13f
  1082 0126 03       		.uleb128 0x3
  1083 0127 54050000 		.4byte	.LASF25
@@ -2401,7 +2401,7 @@
  1095 013f 09       		.uleb128 0x9
  1096 0140 EE030000 		.4byte	.LASF29
  1097 0144 06       		.byte	0x6
- 1098 0145 0A       		.byte	0xa
+ 1098 0145 0C       		.byte	0xc
  1099 0146 3C       		.byte	0x3c
  1100 0147 1C010000 		.4byte	0x11c
  1101 014b 0F       		.uleb128 0xf
@@ -5063,51 +5063,51 @@
  3505              		.ident	"GCC: (GNU Tools for STM32 13.3.rel1.20250523-0900) 13.3.1 20240614"
 DEFINED SYMBOLS
                             *ABS*:00000000 clock.c
-     /tmp/ccus1au8.s:19     .text:00000000 $t
-     /tmp/ccus1au8.s:25     .text:00000000 start_PLL
-     /tmp/ccus1au8.s:86     .text:00000038 $d
-     /tmp/ccus1au8.s:90     .text:0000003c $t
-     /tmp/ccus1au8.s:96     .text:0000003c stop_PLL
-     /tmp/ccus1au8.s:130    .text:0000004c $d
-     /tmp/ccus1au8.s:134    .text:00000050 $t
-     /tmp/ccus1au8.s:140    .text:00000050 set_SYSCLK
-     /tmp/ccus1au8.s:171    .text:00000068 $d
-     /tmp/ccus1au8.s:175    .text:0000006c $t
-     /tmp/ccus1au8.s:181    .text:0000006c set_bus_clock_dividers_exp
-     /tmp/ccus1au8.s:265    .text:000000bc $d
-     /tmp/ccus1au8.s:269    .text:000000c0 $t
-     /tmp/ccus1au8.s:275    .text:000000c0 set_MCO
-     /tmp/ccus1au8.s:343    .text:00000108 $d
-     /tmp/ccus1au8.s:347    .text:0000010c $t
-     /tmp/ccus1au8.s:353    .text:0000010c enable_MCO_GPIO
-     /tmp/ccus1au8.s:451    .text:00000154 $d
-     /tmp/ccus1au8.s:457    .text:00000160 $t
-     /tmp/ccus1au8.s:463    .text:00000160 get_PLL_PCLK
-     /tmp/ccus1au8.s:512    .text:0000018c $d
-     /tmp/ccus1au8.s:517    .text:00000194 $t
-     /tmp/ccus1au8.s:523    .text:00000194 get_PLL_RCLK
-     /tmp/ccus1au8.s:565    .text:000001bc $d
-     /tmp/ccus1au8.s:570    .text:000001c4 $t
-     /tmp/ccus1au8.s:576    .text:000001c4 get_SYSCLK
-     /tmp/ccus1au8.s:616    .text:000001e8 $d
-     /tmp/ccus1au8.s:621    .text:000001f0 $t
-     /tmp/ccus1au8.s:627    .text:000001f0 get_AHB_divider_exp
-     /tmp/ccus1au8.s:653    .text:00000204 $d
-     /tmp/ccus1au8.s:657    .text:00000208 $t
-     /tmp/ccus1au8.s:663    .text:00000208 get_APB1_divider_exp
-     /tmp/ccus1au8.s:689    .text:0000021c $d
-     /tmp/ccus1au8.s:693    .text:00000220 $t
-     /tmp/ccus1au8.s:699    .text:00000220 get_APB2_divider_exp
-     /tmp/ccus1au8.s:725    .text:00000234 $d
-     /tmp/ccus1au8.s:729    .text:00000238 $t
-     /tmp/ccus1au8.s:735    .text:00000238 get_AHBCLK
-     /tmp/ccus1au8.s:766    .text:0000024a get_APB1CLK
-     /tmp/ccus1au8.s:797    .text:0000025c get_APB2CLK
-     /tmp/ccus1au8.s:828    .text:0000026e get_APB1TIMCLK
-     /tmp/ccus1au8.s:873    .text:00000290 $d
-     /tmp/ccus1au8.s:877    .text:00000294 $t
-     /tmp/ccus1au8.s:883    .text:00000294 get_APB2TIMCLK
-     /tmp/ccus1au8.s:928    .text:000002b8 $d
+     /tmp/cceop2fY.s:19     .text:00000000 $t
+     /tmp/cceop2fY.s:25     .text:00000000 start_PLL
+     /tmp/cceop2fY.s:86     .text:00000038 $d
+     /tmp/cceop2fY.s:90     .text:0000003c $t
+     /tmp/cceop2fY.s:96     .text:0000003c stop_PLL
+     /tmp/cceop2fY.s:130    .text:0000004c $d
+     /tmp/cceop2fY.s:134    .text:00000050 $t
+     /tmp/cceop2fY.s:140    .text:00000050 set_SYSCLK
+     /tmp/cceop2fY.s:171    .text:00000068 $d
+     /tmp/cceop2fY.s:175    .text:0000006c $t
+     /tmp/cceop2fY.s:181    .text:0000006c set_bus_clock_dividers_exp
+     /tmp/cceop2fY.s:265    .text:000000bc $d
+     /tmp/cceop2fY.s:269    .text:000000c0 $t
+     /tmp/cceop2fY.s:275    .text:000000c0 set_MCO
+     /tmp/cceop2fY.s:343    .text:00000108 $d
+     /tmp/cceop2fY.s:347    .text:0000010c $t
+     /tmp/cceop2fY.s:353    .text:0000010c enable_MCO_GPIO
+     /tmp/cceop2fY.s:451    .text:00000154 $d
+     /tmp/cceop2fY.s:457    .text:00000160 $t
+     /tmp/cceop2fY.s:463    .text:00000160 get_PLL_PCLK
+     /tmp/cceop2fY.s:512    .text:0000018c $d
+     /tmp/cceop2fY.s:517    .text:00000194 $t
+     /tmp/cceop2fY.s:523    .text:00000194 get_PLL_RCLK
+     /tmp/cceop2fY.s:565    .text:000001bc $d
+     /tmp/cceop2fY.s:570    .text:000001c4 $t
+     /tmp/cceop2fY.s:576    .text:000001c4 get_SYSCLK
+     /tmp/cceop2fY.s:616    .text:000001e8 $d
+     /tmp/cceop2fY.s:621    .text:000001f0 $t
+     /tmp/cceop2fY.s:627    .text:000001f0 get_AHB_divider_exp
+     /tmp/cceop2fY.s:653    .text:00000204 $d
+     /tmp/cceop2fY.s:657    .text:00000208 $t
+     /tmp/cceop2fY.s:663    .text:00000208 get_APB1_divider_exp
+     /tmp/cceop2fY.s:689    .text:0000021c $d
+     /tmp/cceop2fY.s:693    .text:00000220 $t
+     /tmp/cceop2fY.s:699    .text:00000220 get_APB2_divider_exp
+     /tmp/cceop2fY.s:725    .text:00000234 $d
+     /tmp/cceop2fY.s:729    .text:00000238 $t
+     /tmp/cceop2fY.s:735    .text:00000238 get_AHBCLK
+     /tmp/cceop2fY.s:766    .text:0000024a get_APB1CLK
+     /tmp/cceop2fY.s:797    .text:0000025c get_APB2CLK
+     /tmp/cceop2fY.s:828    .text:0000026e get_APB1TIMCLK
+     /tmp/cceop2fY.s:873    .text:00000290 $d
+     /tmp/cceop2fY.s:877    .text:00000294 $t
+     /tmp/cceop2fY.s:883    .text:00000294 get_APB2TIMCLK
+     /tmp/cceop2fY.s:928    .text:000002b8 $d
 
 UNDEFINED SYMBOLS
 RCC

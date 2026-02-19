@@ -805,13 +805,13 @@
  693              		.ident	"GCC: (GNU Tools for STM32 13.3.rel1.20250523-0900) 13.3.1 20240614"
 DEFINED SYMBOLS
                             *ABS*:00000000 startup.c
-     /tmp/ccDVdU45.s:19     .text:00000000 $t
-     /tmp/ccDVdU45.s:25     .text:00000000 hardware_init_hook
-     /tmp/ccDVdU45.s:45     .text:0000000c $d
-     /tmp/ccDVdU45.s:51     .text:00000018 $t
-     /tmp/ccDVdU45.s:57     .text:00000018 _exit
-     /tmp/ccDVdU45.s:78     boot:00000000 __boot_sector
-     /tmp/ccDVdU45.s:75     boot:00000000 $d
+     /tmp/ccahB6kq.s:19     .text:00000000 $t
+     /tmp/ccahB6kq.s:25     .text:00000000 hardware_init_hook
+     /tmp/ccahB6kq.s:45     .text:0000000c $d
+     /tmp/ccahB6kq.s:51     .text:00000018 $t
+     /tmp/ccahB6kq.s:57     .text:00000018 _exit
+     /tmp/ccahB6kq.s:78     boot:00000000 __boot_sector
+     /tmp/ccahB6kq.s:75     boot:00000000 $d
 
 UNDEFINED SYMBOLS
 memcpy

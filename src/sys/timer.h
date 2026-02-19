@@ -6,7 +6,7 @@
  * @brief Fonction pour activer le TIMER qu'est dans la patte PB9
  * 
  */
-void init_timer();
+void init_timer_buzzer();
 
 
 

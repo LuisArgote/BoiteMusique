@@ -2928,7 +2928,7 @@
  1722 0aca 29       		.uleb128 0x29
  1723 0acb E1010000 		.4byte	.LASF163
  1724 0acf 0B       		.byte	0xb
- 1725 0ad0 1D       		.byte	0x1d
+ 1725 0ad0 1F       		.byte	0x1f
  1726 0ad1 0A       		.byte	0xa
  1727 0ad2 78000000 		.4byte	0x78
  1728 0ad6 DC0A0000 		.4byte	0xadc
@@ -4599,21 +4599,21 @@
  3068              		.ident	"GCC: (GNU Tools for STM32 13.3.rel1.20250523-0900) 13.3.1 20240614"
 DEFINED SYMBOLS
                             *ABS*:00000000 serial_io.c
-     /tmp/cc7rAAS0.s:19     .text:00000000 $t
-     /tmp/cc7rAAS0.s:25     .text:00000000 _putchar
-     /tmp/cc7rAAS0.s:52     .text:0000000c $d
-     /tmp/cc7rAAS0.s:56     .text:00000010 $t
-     /tmp/cc7rAAS0.s:62     .text:00000010 _getchar
-     /tmp/cc7rAAS0.s:89     .text:00000020 $d
-     /tmp/cc7rAAS0.s:93     .text:00000024 $t
-     /tmp/cc7rAAS0.s:99     .text:00000024 enable_USART2_GPIO
-     /tmp/cc7rAAS0.s:158    .text:00000050 $d
-     /tmp/cc7rAAS0.s:163    .text:00000058 $t
-     /tmp/cc7rAAS0.s:169    .text:00000058 setup_USART2
-     /tmp/cc7rAAS0.s:243    .text:00000084 $d
-     /tmp/cc7rAAS0.s:248    .text:0000008c $t
-     /tmp/cc7rAAS0.s:254    .text:0000008c serial_io_init
-     /tmp/cc7rAAS0.s:314    .text:000000cc $d
+     /tmp/cc8Fy6sZ.s:19     .text:00000000 $t
+     /tmp/cc8Fy6sZ.s:25     .text:00000000 _putchar
+     /tmp/cc8Fy6sZ.s:52     .text:0000000c $d
+     /tmp/cc8Fy6sZ.s:56     .text:00000010 $t
+     /tmp/cc8Fy6sZ.s:62     .text:00000010 _getchar
+     /tmp/cc8Fy6sZ.s:89     .text:00000020 $d
+     /tmp/cc8Fy6sZ.s:93     .text:00000024 $t
+     /tmp/cc8Fy6sZ.s:99     .text:00000024 enable_USART2_GPIO
+     /tmp/cc8Fy6sZ.s:158    .text:00000050 $d
+     /tmp/cc8Fy6sZ.s:163    .text:00000058 $t
+     /tmp/cc8Fy6sZ.s:169    .text:00000058 setup_USART2
+     /tmp/cc8Fy6sZ.s:243    .text:00000084 $d
+     /tmp/cc8Fy6sZ.s:248    .text:0000008c $t
+     /tmp/cc8Fy6sZ.s:254    .text:0000008c serial_io_init
+     /tmp/cc8Fy6sZ.s:314    .text:000000cc $d
 
 UNDEFINED SYMBOLS
 USART2

@@ -1,3 +1,5 @@
+#ifndef CLOCK_H
+#define CLOCK_H
 #include<stdint.h>
 
 #define HSI_FREQ  16
@@ -30,4 +32,6 @@ uint32_t get_APB1CLK();
 uint32_t get_APB2CLK();
 uint32_t get_APB1TIMCLK();
 uint32_t get_APB2TIMCLK();
+
+#endif
 
