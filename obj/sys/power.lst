@@ -1459,10 +1459,10 @@
  304 0007 04       		.byte	0x4
  305 0008 00000000 		.4byte	.Ldebug_abbrev0
  306 000c 0E       		.uleb128 0xe
- 307 000d 94010000 		.4byte	.LASF55
+ 307 000d 98010000 		.4byte	.LASF55
  308 0011 0C       		.byte	0xc
- 309 0012 E3000000 		.4byte	.LASF56
- 310 0016 0A000000 		.4byte	.LASF57
+ 309 0012 90000000 		.4byte	.LASF56
+ 310 0016 1C010000 		.4byte	.LASF57
  311 001a 00000000 		.4byte	.Ltext0
  312 001e A8000000 		.4byte	.Letext0-.Ltext0
  313 0022 00000000 		.4byte	.Ldebug_line0
@@ -1475,19 +1475,19 @@
  320 002f 0E       		.byte	0xe
  321 0030 47000000 		.4byte	0x47
  322 0034 05       		.uleb128 0x5
- 323 0035 6C000000 		.4byte	.LASF0
+ 323 0035 19000000 		.4byte	.LASF0
  324 0039 03       		.byte	0x3
  325 003a 05       		.uleb128 0x5
- 326 003b 73000000 		.4byte	.LASF1
+ 326 003b 20000000 		.4byte	.LASF1
  327 003f 02       		.byte	0x2
  328 0040 05       		.uleb128 0x5
- 329 0041 7A000000 		.4byte	.LASF2
+ 329 0041 27000000 		.4byte	.LASF2
  330 0045 01       		.byte	0x1
  331 0046 00       		.byte	0
  332 0047 02       		.uleb128 0x2
  333 0048 01       		.byte	0x1
  334 0049 08       		.byte	0x8
- 335 004a 6F010000 		.4byte	.LASF3
+ 335 004a 73010000 		.4byte	.LASF3
  336 004e 10       		.uleb128 0x10
  337 004f 564F5300 		.ascii	"VOS\000"
  338 0053 06       		.byte	0x6
@@ -1497,21 +1497,21 @@
  342 005a 02       		.uleb128 0x2
  343 005b 01       		.byte	0x1
  344 005c 06       		.byte	0x6
- 345 005d 81000000 		.4byte	.LASF4
+ 345 005d 2E000000 		.4byte	.LASF4
  346 0061 02       		.uleb128 0x2
  347 0062 02       		.byte	0x2
  348 0063 05       		.byte	0x5
- 349 0064 8D000000 		.4byte	.LASF5
+ 349 0064 3A000000 		.4byte	.LASF5
  350 0068 02       		.uleb128 0x2
  351 0069 02       		.byte	0x2
  352 006a 07       		.byte	0x7
- 353 006b 9E020000 		.4byte	.LASF6
+ 353 006b A2020000 		.4byte	.LASF6
  354 006f 02       		.uleb128 0x2
  355 0070 04       		.byte	0x4
  356 0071 05       		.byte	0x5
- 357 0072 54010000 		.4byte	.LASF7
+ 357 0072 01010000 		.4byte	.LASF7
  358 0076 06       		.uleb128 0x6
- 359 0077 BF000000 		.4byte	.LASF8
+ 359 0077 6C000000 		.4byte	.LASF8
  360 007b 04       		.byte	0x4
  361 007c 4F       		.byte	0x4f
  362 007d 19       		.byte	0x19
@@ -1519,15 +1519,15 @@
  364 0082 02       		.uleb128 0x2
  365 0083 04       		.byte	0x4
  366 0084 07       		.byte	0x7
- 367 0085 D9020000 		.4byte	.LASF9
+ 367 0085 DD020000 		.4byte	.LASF9
  368 0089 02       		.uleb128 0x2
  369 008a 08       		.byte	0x8
  370 008b 05       		.byte	0x5
- 371 008c 36010000 		.4byte	.LASF10
+ 371 008c E3000000 		.4byte	.LASF10
  372 0090 02       		.uleb128 0x2
  373 0091 08       		.byte	0x8
  374 0092 07       		.byte	0x7
- 375 0093 33020000 		.4byte	.LASF11
+ 375 0093 37020000 		.4byte	.LASF11
  376 0097 11       		.uleb128 0x11
  377 0098 04       		.byte	0x4
  378 0099 05       		.byte	0x5
@@ -1535,15 +1535,15 @@
  380 009e 02       		.uleb128 0x2
  381 009f 04       		.byte	0x4
  382 00a0 07       		.byte	0x7
- 383 00a1 59020000 		.4byte	.LASF12
+ 383 00a1 5D020000 		.4byte	.LASF12
  384 00a5 06       		.uleb128 0x6
- 385 00a6 4A020000 		.4byte	.LASF13
+ 385 00a6 4E020000 		.4byte	.LASF13
  386 00aa 05       		.byte	0x5
  387 00ab 30       		.byte	0x30
  388 00ac 14       		.byte	0x14
  389 00ad 76000000 		.4byte	0x76
  390 00b1 07       		.uleb128 0x7
- 391 00b2 EB020000 		.4byte	.LASF14
+ 391 00b2 EF020000 		.4byte	.LASF14
  392 00b6 08       		.byte	0x8
  393 00b7 62       		.byte	0x62
  394 00b8 D2000000 		.4byte	0xd2
@@ -1561,7 +1561,7 @@
  406 00d2 08       		.uleb128 0x8
  407 00d3 B1000000 		.4byte	0xb1
  408 00d7 07       		.uleb128 0x7
- 409 00d8 6F020000 		.4byte	.LASF15
+ 409 00d8 73020000 		.4byte	.LASF15
  410 00dc 98       		.byte	0x98
  411 00dd 68       		.byte	0x68
  412 00de A7020000 		.4byte	0x2a7
@@ -1571,13 +1571,13 @@
  416 00e7 A5000000 		.4byte	0xa5
  417 00eb 00       		.byte	0
  418 00ec 01       		.uleb128 0x1
- 419 00ed 7D020000 		.4byte	.LASF16
+ 419 00ed 81020000 		.4byte	.LASF16
  420 00f1 6A       		.byte	0x6a
  421 00f2 0C       		.byte	0xc
  422 00f3 A5000000 		.4byte	0xa5
  423 00f7 04       		.byte	0x4
  424 00f8 01       		.uleb128 0x1
- 425 00f9 F3000000 		.4byte	.LASF17
+ 425 00f9 A0000000 		.4byte	.LASF17
  426 00fd 6B       		.byte	0x6b
  427 00fe 0C       		.byte	0xc
  428 00ff A5000000 		.4byte	0xa5
@@ -1588,97 +1588,97 @@
  433 010a A5000000 		.4byte	0xa5
  434 010e 0C       		.byte	0xc
  435 010f 01       		.uleb128 0x1
- 436 0110 2A030000 		.4byte	.LASF18
+ 436 0110 2E030000 		.4byte	.LASF18
  437 0114 6D       		.byte	0x6d
  438 0115 0C       		.byte	0xc
  439 0116 A5000000 		.4byte	0xa5
  440 011a 10       		.byte	0x10
  441 011b 01       		.uleb128 0x1
- 442 011c 66020000 		.4byte	.LASF19
+ 442 011c 6A020000 		.4byte	.LASF19
  443 0120 6E       		.byte	0x6e
  444 0121 0C       		.byte	0xc
  445 0122 A5000000 		.4byte	0xa5
  446 0126 14       		.byte	0x14
  447 0127 01       		.uleb128 0x1
- 448 0128 42030000 		.4byte	.LASF20
+ 448 0128 46030000 		.4byte	.LASF20
  449 012c 6F       		.byte	0x6f
  450 012d 0C       		.byte	0xc
  451 012e A5000000 		.4byte	0xa5
  452 0132 18       		.byte	0x18
  453 0133 01       		.uleb128 0x1
- 454 0134 B1020000 		.4byte	.LASF21
+ 454 0134 B5020000 		.4byte	.LASF21
  455 0138 70       		.byte	0x70
  456 0139 03       		.byte	0x3
  457 013a A5000000 		.4byte	0xa5
  458 013e 1C       		.byte	0x1c
  459 013f 01       		.uleb128 0x1
- 460 0140 CA000000 		.4byte	.LASF22
+ 460 0140 77000000 		.4byte	.LASF22
  461 0144 71       		.byte	0x71
  462 0145 0C       		.byte	0xc
  463 0146 A5000000 		.4byte	0xa5
  464 014a 20       		.byte	0x20
  465 014b 01       		.uleb128 0x1
- 466 014c 66010000 		.4byte	.LASF23
+ 466 014c 13010000 		.4byte	.LASF23
  467 0150 72       		.byte	0x72
  468 0151 0C       		.byte	0xc
  469 0152 A5000000 		.4byte	0xa5
  470 0156 24       		.byte	0x24
  471 0157 01       		.uleb128 0x1
- 472 0158 33030000 		.4byte	.LASF24
+ 472 0158 37030000 		.4byte	.LASF24
  473 015c 73       		.byte	0x73
  474 015d 03       		.byte	0x3
  475 015e A5000000 		.4byte	0xa5
  476 0162 28       		.byte	0x28
  477 0163 01       		.uleb128 0x1
- 478 0164 72030000 		.4byte	.LASF25
+ 478 0164 76030000 		.4byte	.LASF25
  479 0168 74       		.byte	0x74
  480 0169 03       		.byte	0x3
  481 016a A5000000 		.4byte	0xa5
  482 016e 2C       		.byte	0x2c
  483 016f 01       		.uleb128 0x1
- 484 0170 08030000 		.4byte	.LASF26
+ 484 0170 0C030000 		.4byte	.LASF26
  485 0174 75       		.byte	0x75
  486 0175 0C       		.byte	0xc
  487 0176 A5000000 		.4byte	0xa5
  488 017a 30       		.byte	0x30
  489 017b 01       		.uleb128 0x1
- 490 017c 26010000 		.4byte	.LASF27
+ 490 017c D3000000 		.4byte	.LASF27
  491 0180 76       		.byte	0x76
  492 0181 0C       		.byte	0xc
  493 0182 A5000000 		.4byte	0xa5
  494 0186 34       		.byte	0x34
  495 0187 01       		.uleb128 0x1
- 496 0188 2E010000 		.4byte	.LASF28
+ 496 0188 DB000000 		.4byte	.LASF28
  497 018c 77       		.byte	0x77
  498 018d 0C       		.byte	0xc
  499 018e A5000000 		.4byte	0xa5
  500 0192 38       		.byte	0x38
  501 0193 01       		.uleb128 0x1
- 502 0194 F8000000 		.4byte	.LASF29
+ 502 0194 A5000000 		.4byte	.LASF29
  503 0198 78       		.byte	0x78
  504 0199 03       		.byte	0x3
  505 019a A5000000 		.4byte	0xa5
  506 019e 3C       		.byte	0x3c
  507 019f 01       		.uleb128 0x1
- 508 01a0 07010000 		.4byte	.LASF30
+ 508 01a0 B4000000 		.4byte	.LASF30
  509 01a4 79       		.byte	0x79
  510 01a5 0C       		.byte	0xc
  511 01a6 A5000000 		.4byte	0xa5
  512 01aa 40       		.byte	0x40
  513 01ab 01       		.uleb128 0x1
- 514 01ac 8C010000 		.4byte	.LASF31
+ 514 01ac 90010000 		.4byte	.LASF31
  515 01b0 7A       		.byte	0x7a
  516 01b1 0C       		.byte	0xc
  517 01b2 A5000000 		.4byte	0xa5
  518 01b6 44       		.byte	0x44
  519 01b7 01       		.uleb128 0x1
- 520 01b8 85020000 		.4byte	.LASF32
+ 520 01b8 89020000 		.4byte	.LASF32
  521 01bc 7B       		.byte	0x7b
  522 01bd 03       		.byte	0x3
  523 01be A5000000 		.4byte	0xa5
  524 01c2 48       		.byte	0x48
  525 01c3 01       		.uleb128 0x1
- 526 01c4 7D010000 		.4byte	.LASF33
+ 526 01c4 81010000 		.4byte	.LASF33
  527 01c8 7C       		.byte	0x7c
  528 01c9 03       		.byte	0x3
  529 01ca A5000000 		.4byte	0xa5
@@ -1690,49 +1690,49 @@
  535 01d6 A5000000 		.4byte	0xa5
  536 01da 50       		.byte	0x50
  537 01db 01       		.uleb128 0x1
- 538 01dc C0020000 		.4byte	.LASF35
+ 538 01dc C4020000 		.4byte	.LASF35
  539 01e0 7E       		.byte	0x7e
  540 01e1 0C       		.byte	0xc
  541 01e2 A5000000 		.4byte	0xa5
  542 01e6 54       		.byte	0x54
  543 01e7 01       		.uleb128 0x1
- 544 01e8 D9000000 		.4byte	.LASF36
+ 544 01e8 86000000 		.4byte	.LASF36
  545 01ec 7F       		.byte	0x7f
  546 01ed 0C       		.byte	0xc
  547 01ee A5000000 		.4byte	0xa5
  548 01f2 58       		.byte	0x58
  549 01f3 01       		.uleb128 0x1
- 550 01f4 F9020000 		.4byte	.LASF37
+ 550 01f4 FD020000 		.4byte	.LASF37
  551 01f8 80       		.byte	0x80
  552 01f9 03       		.byte	0x3
  553 01fa A5000000 		.4byte	0xa5
  554 01fe 5C       		.byte	0x5c
  555 01ff 01       		.uleb128 0x1
- 556 0200 94020000 		.4byte	.LASF38
+ 556 0200 98020000 		.4byte	.LASF38
  557 0204 81       		.byte	0x81
  558 0205 0C       		.byte	0xc
  559 0206 A5000000 		.4byte	0xa5
  560 020a 60       		.byte	0x60
  561 020b 01       		.uleb128 0x1
- 562 020c 68030000 		.4byte	.LASF39
+ 562 020c 6C030000 		.4byte	.LASF39
  563 0210 82       		.byte	0x82
  564 0211 0C       		.byte	0xc
  565 0212 A5000000 		.4byte	0xa5
  566 0216 64       		.byte	0x64
  567 0217 01       		.uleb128 0x1
- 568 0218 1B030000 		.4byte	.LASF40
+ 568 0218 1F030000 		.4byte	.LASF40
  569 021c 83       		.byte	0x83
  570 021d 03       		.byte	0x3
  571 021e A5000000 		.4byte	0xa5
  572 0222 68       		.byte	0x68
  573 0223 01       		.uleb128 0x1
- 574 0224 5D000000 		.4byte	.LASF41
+ 574 0224 0A000000 		.4byte	.LASF41
  575 0228 84       		.byte	0x84
  576 0229 03       		.byte	0x3
  577 022a A5000000 		.4byte	0xa5
  578 022e 6C       		.byte	0x6c
  579 022f 01       		.uleb128 0x1
- 580 0230 97000000 		.4byte	.LASF42
+ 580 0230 44000000 		.4byte	.LASF42
  581 0234 85       		.byte	0x85
  582 0235 0C       		.byte	0xc
  583 0236 A5000000 		.4byte	0xa5
@@ -1743,49 +1743,49 @@
  588 0241 A5000000 		.4byte	0xa5
  589 0245 74       		.byte	0x74
  590 0246 01       		.uleb128 0x1
- 591 0247 A5000000 		.4byte	.LASF43
+ 591 0247 52000000 		.4byte	.LASF43
  592 024b 87       		.byte	0x87
  593 024c 03       		.byte	0x3
  594 024d A5000000 		.4byte	0xa5
  595 0251 78       		.byte	0x78
  596 0252 01       		.uleb128 0x1
- 597 0253 17010000 		.4byte	.LASF44
+ 597 0253 C4000000 		.4byte	.LASF44
  598 0257 88       		.byte	0x88
  599 0258 03       		.byte	0x3
  600 0259 A5000000 		.4byte	0xa5
  601 025d 7C       		.byte	0x7c
  602 025e 01       		.uleb128 0x1
- 603 025f D3000000 		.4byte	.LASF45
+ 603 025f 80000000 		.4byte	.LASF45
  604 0263 89       		.byte	0x89
  605 0264 0C       		.byte	0xc
  606 0265 A5000000 		.4byte	0xa5
  607 0269 80       		.byte	0x80
  608 026a 01       		.uleb128 0x1
- 609 026b B4000000 		.4byte	.LASF46
+ 609 026b 61000000 		.4byte	.LASF46
  610 026f 8A       		.byte	0x8a
  611 0270 0C       		.byte	0xc
  612 0271 A5000000 		.4byte	0xa5
  613 0275 84       		.byte	0x84
  614 0276 01       		.uleb128 0x1
- 615 0277 4B030000 		.4byte	.LASF47
+ 615 0277 4F030000 		.4byte	.LASF47
  616 027b 8B       		.byte	0x8b
  617 027c 0C       		.byte	0xc
  618 027d A5000000 		.4byte	0xa5
  619 0281 88       		.byte	0x88
  620 0282 01       		.uleb128 0x1
- 621 0283 0F010000 		.4byte	.LASF48
+ 621 0283 BC000000 		.4byte	.LASF48
  622 0287 8C       		.byte	0x8c
  623 0288 0C       		.byte	0xc
  624 0289 A5000000 		.4byte	0xa5
  625 028d 8C       		.byte	0x8c
  626 028e 01       		.uleb128 0x1
- 627 028f 9C000000 		.4byte	.LASF49
+ 627 028f 49000000 		.4byte	.LASF49
  628 0293 8D       		.byte	0x8d
  629 0294 0C       		.byte	0xc
  630 0295 A5000000 		.4byte	0xa5
  631 0299 90       		.byte	0x90
  632 029a 01       		.uleb128 0x1
- 633 029b 5D010000 		.4byte	.LASF50
+ 633 029b 0A010000 		.4byte	.LASF50
  634 029f 8E       		.byte	0x8e
  635 02a0 0C       		.byte	0xc
  636 02a1 A5000000 		.4byte	0xa5
@@ -1802,7 +1802,7 @@
  647 02bc 5D02     		.2byte	0x25d
  648 02be D2000000 		.4byte	0xd2
  649 02c2 0A       		.uleb128 0xa
- 650 02c3 CA020000 		.4byte	.LASF51
+ 650 02c3 CE020000 		.4byte	.LASF51
  651 02c7 1B       		.byte	0x1b
  652 02c8 80000000 		.4byte	.LFB400
  653 02cc 28000000 		.4byte	.LFE400-.LFB400
@@ -1833,7 +1833,7 @@
  678 0312 1F       		.byte	0x1f
  679 0313 00       		.byte	0
  680 0314 0A       		.uleb128 0xa
- 681 0315 44010000 		.4byte	.LASF52
+ 681 0315 F1000000 		.4byte	.LASF52
  682 0319 11       		.byte	0x11
  683 031a 48000000 		.4byte	.LFB399
  684 031e 38000000 		.4byte	.LFE399-.LFB399
@@ -1856,7 +1856,7 @@
  701 034d 00       		.byte	0
  702 034e 00       		.byte	0
  703 034f 12       		.uleb128 0x12
- 704 0350 56030000 		.4byte	.LASF53
+ 704 0350 5A030000 		.4byte	.LASF53
  705 0354 01       		.byte	0x1
  706 0355 0C       		.byte	0xc
  707 0356 05       		.byte	0x5
@@ -1882,7 +1882,7 @@
  727 038e 00       		.byte	0
  728 038f 00       		.byte	0
  729 0390 13       		.uleb128 0x13
- 730 0391 81030000 		.4byte	.LASF54
+ 730 0391 85030000 		.4byte	.LASF54
  731 0395 01       		.byte	0x1
  732 0396 06       		.byte	0x6
  733 0397 06       		.byte	0x6
@@ -1892,7 +1892,7 @@
  737 03a1 9C       		.byte	0x9c
  738 03a2 F2030000 		.4byte	0x3f2
  739 03a6 14       		.uleb128 0x14
- 740 03a7 53020000 		.4byte	.LASF58
+ 740 03a7 57020000 		.4byte	.LASF58
  741 03ab 01       		.byte	0x1
  742 03ac 06       		.byte	0x6
  743 03ad 1C       		.byte	0x1c
@@ -1923,13 +1923,13 @@
  768 03f0 09       		.byte	0x9
  769 03f1 00       		.byte	0
  770 03f2 15       		.uleb128 0x15
- 771 03f3 10030000 		.4byte	.LASF59
+ 771 03f3 14030000 		.4byte	.LASF59
  772 03f7 02       		.byte	0x2
  773 03f8 B202     		.2byte	0x2b2
  774 03fa 01       		.byte	0x1
  775 03fb 03       		.byte	0x3
  776 03fc 16       		.uleb128 0x16
- 777 03fd 2D020000 		.4byte	.LASF60
+ 777 03fd 31020000 		.4byte	.LASF60
  778 0401 03       		.byte	0x3
  779 0402 AA01     		.2byte	0x1aa
  780 0404 35       		.byte	0x35
@@ -2369,275 +2369,275 @@
  1210 0000 41484231 		.ascii	"AHB1LPENR\000"
  1210      4C50454E 
  1210      5200
- 1211              	.LASF57:
- 1212 000a 2F686F6D 		.ascii	"/home/luis/Desktop/Polytech/IESE3/Microcontroleur/P"
- 1212      652F6C75 
- 1212      69732F44 
- 1212      65736B74 
- 1212      6F702F50 
- 1213 003d 726F6A65 		.ascii	"roject_boite_musique/c_project/\000"
- 1213      63745F62 
- 1213      6F697465 
- 1213      5F6D7573 
- 1213      69717565 
- 1214              	.LASF41:
- 1215 005d 5F726573 		.ascii	"_reserved_0x6c\000"
- 1215      65727665 
- 1215      645F3078 
- 1215      366300
- 1216              	.LASF0:
- 1217 006c 7363616C 		.ascii	"scale1\000"
- 1217      653100
- 1218              	.LASF1:
- 1219 0073 7363616C 		.ascii	"scale2\000"
- 1219      653200
- 1220              	.LASF2:
- 1221 007a 7363616C 		.ascii	"scale3\000"
- 1221      653300
- 1222              	.LASF4:
- 1223 0081 7369676E 		.ascii	"signed char\000"
- 1223      65642063 
- 1223      68617200 
- 1224              	.LASF5:
- 1225 008d 73686F72 		.ascii	"short int\000"
- 1225      7420696E 
- 1225      7400
- 1226              	.LASF42:
- 1227 0097 42444352 		.ascii	"BDCR\000"
- 1227      00
- 1228              	.LASF49:
- 1229 009c 434B4741 		.ascii	"CKGATENR\000"
- 1229      54454E52 
- 1229      00
- 1230              	.LASF43:
- 1231 00a5 5F726573 		.ascii	"_reserved_0x78\000"
- 1231      65727665 
- 1231      645F3078 
- 1231      373800
- 1232              	.LASF46:
- 1233 00b4 504C4C49 		.ascii	"PLLI2SCFGR\000"
- 1233      32534346 
- 1233      475200
- 1234              	.LASF8:
- 1235 00bf 5F5F7569 		.ascii	"__uint32_t\000"
- 1235      6E743332 
- 1235      5F7400
- 1236              	.LASF22:
- 1237 00ca 41504231 		.ascii	"APB1RSTR\000"
- 1237      52535452 
- 1237      00
- 1238              	.LASF45:
- 1239 00d3 53534347 		.ascii	"SSCGR\000"
- 1239      5200
- 1240              	.LASF36:
- 1241 00d9 41484233 		.ascii	"AHB3LPENR\000"
- 1241      4C50454E 
- 1241      5200
- 1242              	.LASF56:
- 1243 00e3 7372632F 		.ascii	"src/sys/power.c\000"
- 1243      7379732F 
- 1243      706F7765 
- 1243      722E6300 
- 1244              	.LASF17:
- 1245 00f3 43464752 		.ascii	"CFGR\000"
- 1245      00
- 1246              	.LASF29:
- 1247 00f8 5F726573 		.ascii	"_reserved_0x3c\000"
- 1247      65727665 
- 1247      645F3078 
- 1247      336300
- 1248              	.LASF30:
- 1249 0107 41504231 		.ascii	"APB1ENR\000"
- 1249      454E5200 
- 1250              	.LASF48:
- 1251 010f 44434B43 		.ascii	"DCKCFGR\000"
- 1251      46475200 
- 1252              	.LASF44:
- 1253 0117 5F726573 		.ascii	"_reserved_0x7c\000"
- 1253      65727665 
- 1253      645F3078 
- 1253      376300
- 1254              	.LASF27:
- 1255 0126 41484232 		.ascii	"AHB2ENR\000"
- 1255      454E5200 
- 1256              	.LASF28:
- 1257 012e 41484233 		.ascii	"AHB3ENR\000"
- 1257      454E5200 
- 1258              	.LASF10:
- 1259 0136 6C6F6E67 		.ascii	"long long int\000"
- 1259      206C6F6E 
- 1259      6720696E 
- 1259      7400
- 1260              	.LASF52:
- 1261 0144 73746172 		.ascii	"start_Overdrive\000"
- 1261      745F4F76 
- 1261      65726472 
- 1261      69766500 
- 1262              	.LASF7:
- 1263 0154 6C6F6E67 		.ascii	"long int\000"
- 1263      20696E74 
- 1263      00
- 1264              	.LASF50:
- 1265 015d 44434B43 		.ascii	"DCKCFGR2\000"
- 1265      46475232 
- 1265      00
- 1266              	.LASF23:
- 1267 0166 41504232 		.ascii	"APB2RSTR\000"
- 1267      52535452 
- 1267      00
+ 1211              	.LASF41:
+ 1212 000a 5F726573 		.ascii	"_reserved_0x6c\000"
+ 1212      65727665 
+ 1212      645F3078 
+ 1212      366300
+ 1213              	.LASF0:
+ 1214 0019 7363616C 		.ascii	"scale1\000"
+ 1214      653100
+ 1215              	.LASF1:
+ 1216 0020 7363616C 		.ascii	"scale2\000"
+ 1216      653200
+ 1217              	.LASF2:
+ 1218 0027 7363616C 		.ascii	"scale3\000"
+ 1218      653300
+ 1219              	.LASF4:
+ 1220 002e 7369676E 		.ascii	"signed char\000"
+ 1220      65642063 
+ 1220      68617200 
+ 1221              	.LASF5:
+ 1222 003a 73686F72 		.ascii	"short int\000"
+ 1222      7420696E 
+ 1222      7400
+ 1223              	.LASF42:
+ 1224 0044 42444352 		.ascii	"BDCR\000"
+ 1224      00
+ 1225              	.LASF49:
+ 1226 0049 434B4741 		.ascii	"CKGATENR\000"
+ 1226      54454E52 
+ 1226      00
+ 1227              	.LASF43:
+ 1228 0052 5F726573 		.ascii	"_reserved_0x78\000"
+ 1228      65727665 
+ 1228      645F3078 
+ 1228      373800
+ 1229              	.LASF46:
+ 1230 0061 504C4C49 		.ascii	"PLLI2SCFGR\000"
+ 1230      32534346 
+ 1230      475200
+ 1231              	.LASF8:
+ 1232 006c 5F5F7569 		.ascii	"__uint32_t\000"
+ 1232      6E743332 
+ 1232      5F7400
+ 1233              	.LASF22:
+ 1234 0077 41504231 		.ascii	"APB1RSTR\000"
+ 1234      52535452 
+ 1234      00
+ 1235              	.LASF45:
+ 1236 0080 53534347 		.ascii	"SSCGR\000"
+ 1236      5200
+ 1237              	.LASF36:
+ 1238 0086 41484233 		.ascii	"AHB3LPENR\000"
+ 1238      4C50454E 
+ 1238      5200
+ 1239              	.LASF56:
+ 1240 0090 7372632F 		.ascii	"src/sys/power.c\000"
+ 1240      7379732F 
+ 1240      706F7765 
+ 1240      722E6300 
+ 1241              	.LASF17:
+ 1242 00a0 43464752 		.ascii	"CFGR\000"
+ 1242      00
+ 1243              	.LASF29:
+ 1244 00a5 5F726573 		.ascii	"_reserved_0x3c\000"
+ 1244      65727665 
+ 1244      645F3078 
+ 1244      336300
+ 1245              	.LASF30:
+ 1246 00b4 41504231 		.ascii	"APB1ENR\000"
+ 1246      454E5200 
+ 1247              	.LASF48:
+ 1248 00bc 44434B43 		.ascii	"DCKCFGR\000"
+ 1248      46475200 
+ 1249              	.LASF44:
+ 1250 00c4 5F726573 		.ascii	"_reserved_0x7c\000"
+ 1250      65727665 
+ 1250      645F3078 
+ 1250      376300
+ 1251              	.LASF27:
+ 1252 00d3 41484232 		.ascii	"AHB2ENR\000"
+ 1252      454E5200 
+ 1253              	.LASF28:
+ 1254 00db 41484233 		.ascii	"AHB3ENR\000"
+ 1254      454E5200 
+ 1255              	.LASF10:
+ 1256 00e3 6C6F6E67 		.ascii	"long long int\000"
+ 1256      206C6F6E 
+ 1256      6720696E 
+ 1256      7400
+ 1257              	.LASF52:
+ 1258 00f1 73746172 		.ascii	"start_Overdrive\000"
+ 1258      745F4F76 
+ 1258      65726472 
+ 1258      69766500 
+ 1259              	.LASF7:
+ 1260 0101 6C6F6E67 		.ascii	"long int\000"
+ 1260      20696E74 
+ 1260      00
+ 1261              	.LASF50:
+ 1262 010a 44434B43 		.ascii	"DCKCFGR2\000"
+ 1262      46475232 
+ 1262      00
+ 1263              	.LASF23:
+ 1264 0113 41504232 		.ascii	"APB2RSTR\000"
+ 1264      52535452 
+ 1264      00
+ 1265              	.LASF57:
+ 1266 011c 2F686F6D 		.ascii	"/home/luis/Desktop/Polytech/IESE3/Microcontroleur/P"
+ 1266      652F6C75 
+ 1266      69732F44 
+ 1266      65736B74 
+ 1266      6F702F50 
+ 1267 014f 726F6A65 		.ascii	"roject_boite_musique/c_project_BAM/\000"
+ 1267      63745F62 
+ 1267      6F697465 
+ 1267      5F6D7573 
+ 1267      69717565 
  1268              	.LASF3:
- 1269 016f 756E7369 		.ascii	"unsigned char\000"
+ 1269 0173 756E7369 		.ascii	"unsigned char\000"
  1269      676E6564 
  1269      20636861 
  1269      7200
  1270              	.LASF33:
- 1271 017d 5F726573 		.ascii	"_reserved_0x4c\000"
+ 1271 0181 5F726573 		.ascii	"_reserved_0x4c\000"
  1271      65727665 
  1271      645F3078 
  1271      346300
  1272              	.LASF31:
- 1273 018c 41504232 		.ascii	"APB2ENR\000"
+ 1273 0190 41504232 		.ascii	"APB2ENR\000"
  1273      454E5200 
  1274              	.LASF55:
- 1275 0194 474E5520 		.ascii	"GNU C99 13.3.1 20240614 -mtune=cortex-m4 -mthumb -m"
+ 1275 0198 474E5520 		.ascii	"GNU C99 13.3.1 20240614 -mtune=cortex-m4 -mthumb -m"
  1275      43393920 
  1275      31332E33 
  1275      2E312032 
  1275      30323430 
- 1276 01c7 666C6F61 		.ascii	"float-abi=hard -mfpu=fpv4-sp-d16 -march=armv7e-m+fp"
+ 1276 01cb 666C6F61 		.ascii	"float-abi=hard -mfpu=fpv4-sp-d16 -march=armv7e-m+fp"
  1276      742D6162 
  1276      693D6861 
  1276      7264202D 
  1276      6D667075 
- 1277 01fa 202D6720 		.ascii	" -g -O0 -Os -std=gnu99 -fsingle-precision-constant\000"
+ 1277 01fe 202D6720 		.ascii	" -g -O0 -Os -std=gnu99 -fsingle-precision-constant\000"
  1277      2D4F3020 
  1277      2D4F7320 
  1277      2D737464 
  1277      3D676E75 
  1278              	.LASF60:
- 1279 022d 5F5F4453 		.ascii	"__DSB\000"
+ 1279 0231 5F5F4453 		.ascii	"__DSB\000"
  1279      4200
  1280              	.LASF11:
- 1281 0233 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1281 0237 6C6F6E67 		.ascii	"long long unsigned int\000"
  1281      206C6F6E 
  1281      6720756E 
  1281      7369676E 
  1281      65642069 
  1282              	.LASF13:
- 1283 024a 75696E74 		.ascii	"uint32_t\000"
+ 1283 024e 75696E74 		.ascii	"uint32_t\000"
  1283      33325F74 
  1283      00
  1284              	.LASF58:
- 1285 0253 7363616C 		.ascii	"scale\000"
+ 1285 0257 7363616C 		.ascii	"scale\000"
  1285      6500
  1286              	.LASF12:
- 1287 0259 756E7369 		.ascii	"unsigned int\000"
+ 1287 025d 756E7369 		.ascii	"unsigned int\000"
  1287      676E6564 
  1287      20696E74 
  1287      00
  1288              	.LASF19:
- 1289 0266 41484232 		.ascii	"AHB2RSTR\000"
+ 1289 026a 41484232 		.ascii	"AHB2RSTR\000"
  1289      52535452 
  1289      00
  1290              	.LASF15:
- 1291 026f 5243435F 		.ascii	"RCC_registers\000"
+ 1291 0273 5243435F 		.ascii	"RCC_registers\000"
  1291      72656769 
  1291      73746572 
  1291      7300
  1292              	.LASF16:
- 1293 027d 504C4C43 		.ascii	"PLLCFGR\000"
+ 1293 0281 504C4C43 		.ascii	"PLLCFGR\000"
  1293      46475200 
  1294              	.LASF32:
- 1295 0285 5F726573 		.ascii	"_reserved_0x48\000"
+ 1295 0289 5F726573 		.ascii	"_reserved_0x48\000"
  1295      65727665 
  1295      645F3078 
  1295      343800
  1296              	.LASF38:
- 1297 0294 41504231 		.ascii	"APB1LPENR\000"
+ 1297 0298 41504231 		.ascii	"APB1LPENR\000"
  1297      4C50454E 
  1297      5200
  1298              	.LASF6:
- 1299 029e 73686F72 		.ascii	"short unsigned int\000"
+ 1299 02a2 73686F72 		.ascii	"short unsigned int\000"
  1299      7420756E 
  1299      7369676E 
  1299      65642069 
  1299      6E7400
  1300              	.LASF21:
- 1301 02b1 5F726573 		.ascii	"_reserved_0x1c\000"
+ 1301 02b5 5F726573 		.ascii	"_reserved_0x1c\000"
  1301      65727665 
  1301      645F3078 
  1301      316300
  1302              	.LASF35:
- 1303 02c0 41484232 		.ascii	"AHB2LPENR\000"
+ 1303 02c4 41484232 		.ascii	"AHB2LPENR\000"
  1303      4C50454E 
  1303      5200
  1304              	.LASF51:
- 1305 02ca 73746F70 		.ascii	"stop_Overdrive\000"
+ 1305 02ce 73746F70 		.ascii	"stop_Overdrive\000"
  1305      5F4F7665 
  1305      72647269 
  1305      766500
  1306              	.LASF9:
- 1307 02d9 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1307 02dd 6C6F6E67 		.ascii	"long unsigned int\000"
  1307      20756E73 
  1307      69676E65 
  1307      6420696E 
  1307      7400
  1308              	.LASF14:
- 1309 02eb 5057525F 		.ascii	"PWR_registers\000"
+ 1309 02ef 5057525F 		.ascii	"PWR_registers\000"
  1309      72656769 
  1309      73746572 
  1309      7300
  1310              	.LASF37:
- 1311 02f9 5F726573 		.ascii	"_reserved_0x5c\000"
+ 1311 02fd 5F726573 		.ascii	"_reserved_0x5c\000"
  1311      65727665 
  1311      645F3078 
  1311      356300
  1312              	.LASF26:
- 1313 0308 41484231 		.ascii	"AHB1ENR\000"
+ 1313 030c 41484231 		.ascii	"AHB1ENR\000"
  1313      454E5200 
  1314              	.LASF59:
- 1315 0310 656E6162 		.ascii	"enable_PWR\000"
+ 1315 0314 656E6162 		.ascii	"enable_PWR\000"
  1315      6C655F50 
  1315      575200
  1316              	.LASF40:
- 1317 031b 5F726573 		.ascii	"_reserved_0x68\000"
+ 1317 031f 5F726573 		.ascii	"_reserved_0x68\000"
  1317      65727665 
  1317      645F3078 
  1317      363800
  1318              	.LASF18:
- 1319 032a 41484231 		.ascii	"AHB1RSTR\000"
+ 1319 032e 41484231 		.ascii	"AHB1RSTR\000"
  1319      52535452 
  1319      00
  1320              	.LASF24:
- 1321 0333 5F726573 		.ascii	"_reserved_0x28\000"
+ 1321 0337 5F726573 		.ascii	"_reserved_0x28\000"
  1321      65727665 
  1321      645F3078 
  1321      323800
  1322              	.LASF20:
- 1323 0342 41484233 		.ascii	"AHB3RSTR\000"
+ 1323 0346 41484233 		.ascii	"AHB3RSTR\000"
  1323      52535452 
  1323      00
  1324              	.LASF47:
- 1325 034b 504C4C53 		.ascii	"PLLSAICFGR\000"
+ 1325 034f 504C4C53 		.ascii	"PLLSAICFGR\000"
  1325      41494346 
  1325      475200
  1326              	.LASF53:
- 1327 0356 6765745F 		.ascii	"get_voltage_scale\000"
+ 1327 035a 6765745F 		.ascii	"get_voltage_scale\000"
  1327      766F6C74 
  1327      6167655F 
  1327      7363616C 
  1327      6500
  1328              	.LASF39:
- 1329 0368 41504232 		.ascii	"APB2LPENR\000"
+ 1329 036c 41504232 		.ascii	"APB2LPENR\000"
  1329      4C50454E 
  1329      5200
  1330              	.LASF25:
- 1331 0372 5F726573 		.ascii	"_reserved_0x2c\000"
+ 1331 0376 5F726573 		.ascii	"_reserved_0x2c\000"
  1331      65727665 
  1331      645F3078 
  1331      326300
  1332              	.LASF54:
- 1333 0381 7365745F 		.ascii	"set_voltage_scale\000"
+ 1333 0385 7365745F 		.ascii	"set_voltage_scale\000"
  1333      766F6C74 
  1333      6167655F 
  1333      7363616C 
@@ -2645,18 +2645,18 @@
  1334              		.ident	"GCC: (GNU Tools for STM32 13.3.rel1.20250523-0900) 13.3.1 20240614"
 DEFINED SYMBOLS
                             *ABS*:00000000 power.c
-     /tmp/ccMXqeJV.s:19     .text:00000000 $t
-     /tmp/ccMXqeJV.s:25     .text:00000000 set_voltage_scale
-     /tmp/ccMXqeJV.s:88     .text:00000020 $d
-     /tmp/ccMXqeJV.s:93     .text:00000028 $t
-     /tmp/ccMXqeJV.s:99     .text:00000028 get_voltage_scale
-     /tmp/ccMXqeJV.s:142    .text:00000040 $d
-     /tmp/ccMXqeJV.s:147    .text:00000048 $t
-     /tmp/ccMXqeJV.s:153    .text:00000048 start_Overdrive
-     /tmp/ccMXqeJV.s:220    .text:00000078 $d
-     /tmp/ccMXqeJV.s:225    .text:00000080 $t
-     /tmp/ccMXqeJV.s:231    .text:00000080 stop_Overdrive
-     /tmp/ccMXqeJV.s:290    .text:000000a0 $d
+     /tmp/cc7T2UeH.s:19     .text:00000000 $t
+     /tmp/cc7T2UeH.s:25     .text:00000000 set_voltage_scale
+     /tmp/cc7T2UeH.s:88     .text:00000020 $d
+     /tmp/cc7T2UeH.s:93     .text:00000028 $t
+     /tmp/cc7T2UeH.s:99     .text:00000028 get_voltage_scale
+     /tmp/cc7T2UeH.s:142    .text:00000040 $d
+     /tmp/cc7T2UeH.s:147    .text:00000048 $t
+     /tmp/cc7T2UeH.s:153    .text:00000048 start_Overdrive
+     /tmp/cc7T2UeH.s:220    .text:00000078 $d
+     /tmp/cc7T2UeH.s:225    .text:00000080 $t
+     /tmp/cc7T2UeH.s:231    .text:00000080 stop_Overdrive
+     /tmp/cc7T2UeH.s:290    .text:000000a0 $d
 
 UNDEFINED SYMBOLS
 RCC

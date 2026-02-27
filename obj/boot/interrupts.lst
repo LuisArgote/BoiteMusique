@@ -360,8 +360,8 @@
  356 000c 02       		.uleb128 0x2
  357 000d 00000000 		.4byte	.LASF0
  358 0011 0C       		.byte	0xc
- 359 0012 1C010000 		.4byte	.LASF1
- 360 0016 B6000000 		.4byte	.LASF2
+ 359 0012 20010000 		.4byte	.LASF1
+ 360 0016 99000000 		.4byte	.LASF2
  361 001a 00000000 		.4byte	.Ltext0
  362 001e 02000000 		.4byte	.Letext0-.Ltext0
  363 0022 00000000 		.4byte	.Ldebug_line0
@@ -392,9 +392,9 @@
  388 0059 09       		.uleb128 0x9
  389 005a 04       		.byte	0x4
  390 005b 07       		.byte	0x7
- 391 005c 99000000 		.4byte	.LASF3
+ 391 005c 13010000 		.4byte	.LASF3
  392 0060 0A       		.uleb128 0xa
- 393 0061 09010000 		.4byte	.LASF4
+ 393 0061 F0000000 		.4byte	.LASF4
  394 0065 01       		.byte	0x1
  395 0066 D2       		.byte	0xd2
  396 0067 05       		.byte	0x5
@@ -403,7 +403,7 @@
  399 006d 03       		.byte	0x3
  400 006e 00000000 		.4byte	__interrupt_vector
  401 0072 0B       		.uleb128 0xb
- 402 0073 A6000000 		.4byte	.LASF5
+ 402 0073 03010000 		.4byte	.LASF5
  403 0077 01       		.byte	0x1
  404 0078 04       		.byte	0x4
  405 0079 06       		.byte	0x6
@@ -583,35 +583,35 @@
  565      2D4F7320 
  565      2D737464 
  565      3D676E75 
- 566              	.LASF3:
- 567 0099 756E7369 		.ascii	"unsigned int\000"
- 567      676E6564 
- 567      20696E74 
- 567      00
- 568              	.LASF5:
- 569 00a6 44656661 		.ascii	"Default_Handler\000"
- 569      756C745F 
- 569      48616E64 
- 569      6C657200 
- 570              	.LASF2:
- 571 00b6 2F686F6D 		.ascii	"/home/luis/Desktop/Polytech/IESE3/Microcontroleur/P"
- 571      652F6C75 
- 571      69732F44 
- 571      65736B74 
- 571      6F702F50 
- 572 00e9 726F6A65 		.ascii	"roject_boite_musique/c_project/\000"
- 572      63745F62 
- 572      6F697465 
- 572      5F6D7573 
- 572      69717565 
- 573              	.LASF4:
- 574 0109 5F5F696E 		.ascii	"__interrupt_vector\000"
- 574      74657272 
- 574      7570745F 
- 574      76656374 
- 574      6F7200
+ 566              	.LASF2:
+ 567 0099 2F686F6D 		.ascii	"/home/luis/Desktop/Polytech/IESE3/Microcontroleur/P"
+ 567      652F6C75 
+ 567      69732F44 
+ 567      65736B74 
+ 567      6F702F50 
+ 568 00cc 726F6A65 		.ascii	"roject_boite_musique/c_project_BAM/\000"
+ 568      63745F62 
+ 568      6F697465 
+ 568      5F6D7573 
+ 568      69717565 
+ 569              	.LASF4:
+ 570 00f0 5F5F696E 		.ascii	"__interrupt_vector\000"
+ 570      74657272 
+ 570      7570745F 
+ 570      76656374 
+ 570      6F7200
+ 571              	.LASF5:
+ 572 0103 44656661 		.ascii	"Default_Handler\000"
+ 572      756C745F 
+ 572      48616E64 
+ 572      6C657200 
+ 573              	.LASF3:
+ 574 0113 756E7369 		.ascii	"unsigned int\000"
+ 574      676E6564 
+ 574      20696E74 
+ 574      00
  575              	.LASF1:
- 576 011c 7372632F 		.ascii	"src/boot/interrupts.c\000"
+ 576 0120 7372632F 		.ascii	"src/boot/interrupts.c\000"
  576      626F6F74 
  576      2F696E74 
  576      65727275 
@@ -619,104 +619,104 @@
  577              		.ident	"GCC: (GNU Tools for STM32 13.3.rel1.20250523-0900) 13.3.1 20240614"
 DEFINED SYMBOLS
                             *ABS*:00000000 interrupts.c
-     /tmp/ccV0tFyW.s:19     .text:00000000 $t
-     /tmp/ccV0tFyW.s:25     .text:00000000 Default_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 FMPI2C1_error_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 FMPI2C1_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 SPDIF_Rx_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 HDMI_CEC_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 QuadSPI_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 SAI2_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 SAI1_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 SPI4_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 FPU_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DCMI_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 OTG_HS_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 OTG_HS_WKUP_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 OTG_HS_EP1_IN_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 OTG_HS_EP1_OUT_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 I2C3_ER_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 I2C3_EV_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 USART6_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA2_Stream7_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA2_Stream6_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA2_Stream5_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 OTG_FS_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 CAN2_SCE_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 CAN2_RX1_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 CAN2_RX0_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 CAN2_TX_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA2_Stream4_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA2_Stream3_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA2_Stream2_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA2_Stream1_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA2_Stream0_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM7_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM6_DAC_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 UART5_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 UART4_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 SPI3_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM5_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 SDIO_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 FMC_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA1_Stream7_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM8_CC_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM8_TRG_COM_TIM14_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM8_UP_TIM13_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM8_BRK_TIM12_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 OTG_FS_WKUP_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 RTC_Alarm_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 EXTI15_10_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 USART3_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 USART2_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 USART1_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 SPI2_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 SPI1_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 I2C2_ER_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 I2C2_EV_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 I2C1_ER_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 I2C1_EV_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM4_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM3_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM2_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM1_CC_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM1_TRG_COM_TIM11_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM1_UP_TIM10_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TIM1_BRK_TIM9_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 EXTI9_5_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 CAN1_SCE_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 CAN1_RX1_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 CAN1_RX0_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 CAN1_TX_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 ADC_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA1_Stream6_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA1_Stream5_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA1_Stream4_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA1_Stream3_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA1_Stream2_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA1_Stream1_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 DMA1_Stream0_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 EXTI4_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 EXTI3_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 EXTI2_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 EXTI1_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 EXTI0_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 RCC_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 FLASH_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 RTC_WKUP_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 TAMP_STAMP_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 PVD_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 WWDG_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 SysTick_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 PendSV_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 Debug_Monitor_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 SVCall_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 UsageFault_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 BusFault_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 MemManage_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 HardFault_Handler
-     /tmp/ccV0tFyW.s:25     .text:00000000 NMI_Handler
-     /tmp/ccV0tFyW.s:235    interrupt_vector:00000000 __interrupt_vector
-     /tmp/ccV0tFyW.s:232    interrupt_vector:00000000 $d
+     /tmp/ccT889yB.s:19     .text:00000000 $t
+     /tmp/ccT889yB.s:25     .text:00000000 Default_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 FMPI2C1_error_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 FMPI2C1_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 SPDIF_Rx_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 HDMI_CEC_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 QuadSPI_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 SAI2_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 SAI1_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 SPI4_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 FPU_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DCMI_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 OTG_HS_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 OTG_HS_WKUP_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 OTG_HS_EP1_IN_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 OTG_HS_EP1_OUT_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 I2C3_ER_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 I2C3_EV_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 USART6_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA2_Stream7_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA2_Stream6_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA2_Stream5_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 OTG_FS_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 CAN2_SCE_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 CAN2_RX1_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 CAN2_RX0_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 CAN2_TX_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA2_Stream4_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA2_Stream3_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA2_Stream2_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA2_Stream1_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA2_Stream0_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM7_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM6_DAC_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 UART5_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 UART4_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 SPI3_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM5_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 SDIO_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 FMC_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA1_Stream7_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM8_CC_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM8_TRG_COM_TIM14_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM8_UP_TIM13_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM8_BRK_TIM12_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 OTG_FS_WKUP_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 RTC_Alarm_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 EXTI15_10_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 USART3_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 USART2_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 USART1_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 SPI2_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 SPI1_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 I2C2_ER_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 I2C2_EV_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 I2C1_ER_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 I2C1_EV_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM4_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM3_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM2_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM1_CC_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM1_TRG_COM_TIM11_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM1_UP_TIM10_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TIM1_BRK_TIM9_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 EXTI9_5_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 CAN1_SCE_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 CAN1_RX1_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 CAN1_RX0_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 CAN1_TX_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 ADC_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA1_Stream6_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA1_Stream5_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA1_Stream4_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA1_Stream3_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA1_Stream2_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA1_Stream1_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 DMA1_Stream0_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 EXTI4_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 EXTI3_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 EXTI2_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 EXTI1_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 EXTI0_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 RCC_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 FLASH_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 RTC_WKUP_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 TAMP_STAMP_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 PVD_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 WWDG_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 SysTick_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 PendSV_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 Debug_Monitor_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 SVCall_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 UsageFault_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 BusFault_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 MemManage_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 HardFault_Handler
+     /tmp/ccT889yB.s:25     .text:00000000 NMI_Handler
+     /tmp/ccT889yB.s:235    interrupt_vector:00000000 __interrupt_vector
+     /tmp/ccT889yB.s:232    interrupt_vector:00000000 $d
 
 NO UNDEFINED SYMBOLS

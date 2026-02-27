@@ -34,7 +34,7 @@
    7:src/main.c    **** #include "sys/timer.h"
    8:src/main.c    **** #include "sys/notes.h"
    9:src/main.c    **** #include "sys/musique.h"
-  10:src/main.c    **** 
+  10:src/main.c    **** #include "sys/potentiometer.h"
   11:src/main.c    **** 
   12:src/main.c    **** int main() {
   28              		.loc 1 12 12 view -0
@@ -53,363 +53,427 @@
   39              		.loc 1 13 3 view .LVU3
   40 0002 FFF7FEFF 		bl	init_timer_buzzer
   41              	.LVL0:
-  42              	.L2:
-  14:src/main.c    ****   while (1)
-  43              		.loc 1 14 3 is_stmt 1 view .LVU4
-  15:src/main.c    ****   {
-  16:src/main.c    **** 	  die_forelle();
-  44              		.loc 1 16 4 discriminator 1 view .LVU5
-  45 0006 FFF7FEFF 		bl	die_forelle
-  46              	.LVL1:
-  14:src/main.c    ****   while (1)
-  47              		.loc 1 14 9 view .LVU6
-  48 000a FCE7     		b	.L2
-  49              		.cfi_endproc
-  50              	.LFE400:
-  51              		.size	main, .-main
-  52              		.text
-  53              	.Letext0:
-  54              		.file 2 "src/sys/musique.h"
-  55              		.file 3 "src/sys/timer.h"
-  56              		.section	.debug_info,"",%progbits
-  57              	.Ldebug_info0:
-  58 0000 C1000000 		.4byte	0xc1
-  59 0004 0500     		.2byte	0x5
-  60 0006 01       		.byte	0x1
-  61 0007 04       		.byte	0x4
-  62 0008 00000000 		.4byte	.Ldebug_abbrev0
-  63 000c 05       		.uleb128 0x5
-  64 000d E8000000 		.4byte	.LASF14
-  65 0011 0C       		.byte	0xc
-  66 0012 9C000000 		.4byte	.LASF15
-  67 0016 32000000 		.4byte	.LASF16
-  68 001a 0C000000 		.4byte	.LLRL0
-  69 001e 00000000 		.4byte	0
-  70 0022 00000000 		.4byte	.Ldebug_line0
-  71 0026 01       		.uleb128 0x1
-  72 0027 01       		.byte	0x1
-  73 0028 06       		.byte	0x6
-  74 0029 94010000 		.4byte	.LASF0
-  75 002d 01       		.uleb128 0x1
-  76 002e 01       		.byte	0x1
-  77 002f 08       		.byte	0x8
-  78 0030 B3000000 		.4byte	.LASF1
-  79 0034 01       		.uleb128 0x1
-  80 0035 02       		.byte	0x2
-  81 0036 05       		.byte	0x5
-  82 0037 A6010000 		.4byte	.LASF2
-  83 003b 01       		.uleb128 0x1
-  84 003c 02       		.byte	0x2
-  85 003d 07       		.byte	0x7
-  86 003e 81010000 		.4byte	.LASF3
-  87 0042 01       		.uleb128 0x1
-  88 0043 04       		.byte	0x4
-  89 0044 05       		.byte	0x5
-  90 0045 D8000000 		.4byte	.LASF4
-  91 0049 01       		.uleb128 0x1
-  92 004a 04       		.byte	0x4
-  93 004b 07       		.byte	0x7
-  94 004c 20000000 		.4byte	.LASF5
-  95 0050 01       		.uleb128 0x1
-  96 0051 08       		.byte	0x8
-  97 0052 05       		.byte	0x5
-  98 0053 00000000 		.4byte	.LASF6
-  99 0057 01       		.uleb128 0x1
- 100 0058 08       		.byte	0x8
- 101 0059 07       		.byte	0x7
- 102 005a 85000000 		.4byte	.LASF7
- 103 005e 06       		.uleb128 0x6
- 104 005f 04       		.byte	0x4
- 105 0060 05       		.byte	0x5
- 106 0061 696E7400 		.ascii	"int\000"
- 107 0065 01       		.uleb128 0x1
- 108 0066 04       		.byte	0x4
- 109 0067 07       		.byte	0x7
- 110 0068 0E000000 		.4byte	.LASF8
- 111 006c 01       		.uleb128 0x1
- 112 006d 01       		.byte	0x1
- 113 006e 08       		.byte	0x8
- 114 006f D3000000 		.4byte	.LASF9
- 115 0073 01       		.uleb128 0x1
- 116 0074 04       		.byte	0x4
- 117 0075 04       		.byte	0x4
- 118 0076 A0010000 		.4byte	.LASF10
- 119 007a 01       		.uleb128 0x1
- 120 007b 08       		.byte	0x8
- 121 007c 04       		.byte	0x4
- 122 007d E1000000 		.4byte	.LASF11
- 123 0081 02       		.uleb128 0x2
- 124 0082 A7000000 		.4byte	.LASF12
- 125 0086 02       		.byte	0x2
- 126 0087 0D       		.byte	0xd
- 127 0088 8E000000 		.4byte	0x8e
- 128 008c 03       		.uleb128 0x3
- 129 008d 00       		.byte	0
- 130 008e 02       		.uleb128 0x2
- 131 008f C1000000 		.4byte	.LASF13
- 132 0093 03       		.byte	0x3
- 133 0094 09       		.byte	0x9
- 134 0095 9B000000 		.4byte	0x9b
- 135 0099 03       		.uleb128 0x3
- 136 009a 00       		.byte	0
- 137 009b 07       		.uleb128 0x7
- 138 009c 1B000000 		.4byte	.LASF17
- 139 00a0 01       		.byte	0x1
- 140 00a1 0C       		.byte	0xc
- 141 00a2 05       		.byte	0x5
- 142 00a3 5E000000 		.4byte	0x5e
- 143 00a7 00000000 		.4byte	.LFB400
- 144 00ab 0C000000 		.4byte	.LFE400-.LFB400
- 145 00af 01       		.uleb128 0x1
- 146 00b0 9C       		.byte	0x9c
- 147 00b1 04       		.uleb128 0x4
- 148 00b2 06000000 		.4byte	.LVL0
- 149 00b6 8E000000 		.4byte	0x8e
- 150 00ba 04       		.uleb128 0x4
- 151 00bb 0A000000 		.4byte	.LVL1
- 152 00bf 81000000 		.4byte	0x81
- 153 00c3 00       		.byte	0
- 154 00c4 00       		.byte	0
- 155              		.section	.debug_abbrev,"",%progbits
- 156              	.Ldebug_abbrev0:
- 157 0000 01       		.uleb128 0x1
- 158 0001 24       		.uleb128 0x24
- 159 0002 00       		.byte	0
- 160 0003 0B       		.uleb128 0xb
- 161 0004 0B       		.uleb128 0xb
- 162 0005 3E       		.uleb128 0x3e
- 163 0006 0B       		.uleb128 0xb
- 164 0007 03       		.uleb128 0x3
- 165 0008 0E       		.uleb128 0xe
- 166 0009 00       		.byte	0
- 167 000a 00       		.byte	0
- 168 000b 02       		.uleb128 0x2
- 169 000c 2E       		.uleb128 0x2e
- 170 000d 01       		.byte	0x1
- 171 000e 3F       		.uleb128 0x3f
- 172 000f 19       		.uleb128 0x19
- 173 0010 03       		.uleb128 0x3
- 174 0011 0E       		.uleb128 0xe
- 175 0012 3A       		.uleb128 0x3a
- 176 0013 0B       		.uleb128 0xb
- 177 0014 3B       		.uleb128 0x3b
- 178 0015 0B       		.uleb128 0xb
- 179 0016 39       		.uleb128 0x39
- 180 0017 21       		.uleb128 0x21
- 181 0018 06       		.sleb128 6
- 182 0019 3C       		.uleb128 0x3c
- 183 001a 19       		.uleb128 0x19
- 184 001b 01       		.uleb128 0x1
- 185 001c 13       		.uleb128 0x13
- 186 001d 00       		.byte	0
- 187 001e 00       		.byte	0
- 188 001f 03       		.uleb128 0x3
- 189 0020 18       		.uleb128 0x18
- 190 0021 00       		.byte	0
- 191 0022 00       		.byte	0
- 192 0023 00       		.byte	0
- 193 0024 04       		.uleb128 0x4
- 194 0025 48       		.uleb128 0x48
- 195 0026 00       		.byte	0
- 196 0027 7D       		.uleb128 0x7d
- 197 0028 01       		.uleb128 0x1
- 198 0029 7F       		.uleb128 0x7f
- 199 002a 13       		.uleb128 0x13
- 200 002b 00       		.byte	0
- 201 002c 00       		.byte	0
- 202 002d 05       		.uleb128 0x5
- 203 002e 11       		.uleb128 0x11
- 204 002f 01       		.byte	0x1
- 205 0030 25       		.uleb128 0x25
- 206 0031 0E       		.uleb128 0xe
- 207 0032 13       		.uleb128 0x13
- 208 0033 0B       		.uleb128 0xb
- 209 0034 03       		.uleb128 0x3
- 210 0035 0E       		.uleb128 0xe
- 211 0036 1B       		.uleb128 0x1b
- 212 0037 0E       		.uleb128 0xe
- 213 0038 55       		.uleb128 0x55
- 214 0039 17       		.uleb128 0x17
- 215 003a 11       		.uleb128 0x11
- 216 003b 01       		.uleb128 0x1
- 217 003c 10       		.uleb128 0x10
- 218 003d 17       		.uleb128 0x17
- 219 003e 00       		.byte	0
- 220 003f 00       		.byte	0
- 221 0040 06       		.uleb128 0x6
- 222 0041 24       		.uleb128 0x24
- 223 0042 00       		.byte	0
- 224 0043 0B       		.uleb128 0xb
- 225 0044 0B       		.uleb128 0xb
- 226 0045 3E       		.uleb128 0x3e
- 227 0046 0B       		.uleb128 0xb
- 228 0047 03       		.uleb128 0x3
- 229 0048 08       		.uleb128 0x8
- 230 0049 00       		.byte	0
- 231 004a 00       		.byte	0
- 232 004b 07       		.uleb128 0x7
- 233 004c 2E       		.uleb128 0x2e
- 234 004d 01       		.byte	0x1
- 235 004e 3F       		.uleb128 0x3f
- 236 004f 19       		.uleb128 0x19
- 237 0050 03       		.uleb128 0x3
- 238 0051 0E       		.uleb128 0xe
- 239 0052 3A       		.uleb128 0x3a
- 240 0053 0B       		.uleb128 0xb
- 241 0054 3B       		.uleb128 0x3b
- 242 0055 0B       		.uleb128 0xb
- 243 0056 39       		.uleb128 0x39
- 244 0057 0B       		.uleb128 0xb
- 245 0058 49       		.uleb128 0x49
- 246 0059 13       		.uleb128 0x13
- 247 005a 11       		.uleb128 0x11
- 248 005b 01       		.uleb128 0x1
- 249 005c 12       		.uleb128 0x12
- 250 005d 06       		.uleb128 0x6
- 251 005e 40       		.uleb128 0x40
- 252 005f 18       		.uleb128 0x18
- 253 0060 7A       		.uleb128 0x7a
- 254 0061 19       		.uleb128 0x19
- 255 0062 00       		.byte	0
- 256 0063 00       		.byte	0
- 257 0064 00       		.byte	0
- 258              		.section	.debug_aranges,"",%progbits
- 259 0000 1C000000 		.4byte	0x1c
- 260 0004 0200     		.2byte	0x2
- 261 0006 00000000 		.4byte	.Ldebug_info0
- 262 000a 04       		.byte	0x4
- 263 000b 00       		.byte	0
- 264 000c 0000     		.2byte	0
- 265 000e 0000     		.2byte	0
- 266 0010 00000000 		.4byte	.LFB400
- 267 0014 0C000000 		.4byte	.LFE400-.LFB400
- 268 0018 00000000 		.4byte	0
- 269 001c 00000000 		.4byte	0
- 270              		.section	.debug_rnglists,"",%progbits
- 271              	.Ldebug_ranges0:
- 272 0000 0F000000 		.4byte	.Ldebug_ranges3-.Ldebug_ranges2
- 273              	.Ldebug_ranges2:
- 274 0004 0500     		.2byte	0x5
- 275 0006 04       		.byte	0x4
- 276 0007 00       		.byte	0
- 277 0008 00000000 		.4byte	0
- 278              	.LLRL0:
- 279 000c 07       		.byte	0x7
- 280 000d 00000000 		.4byte	.LFB400
- 281 0011 0C       		.uleb128 .LFE400-.LFB400
- 282 0012 00       		.byte	0
- 283              	.Ldebug_ranges3:
- 284              		.section	.debug_line,"",%progbits
- 285              	.Ldebug_line0:
- 286 0000 6E000000 		.section	.debug_str,"MS",%progbits,1
- 286      03004100 
- 286      00000201 
- 286      FB0E0D00 
- 286      01010101 
- 287              	.LASF6:
- 288 0000 6C6F6E67 		.ascii	"long long int\000"
- 288      206C6F6E 
- 288      6720696E 
- 288      7400
- 289              	.LASF8:
- 290 000e 756E7369 		.ascii	"unsigned int\000"
- 290      676E6564 
- 290      20696E74 
- 290      00
- 291              	.LASF17:
- 292 001b 6D61696E 		.ascii	"main\000"
- 292      00
- 293              	.LASF5:
- 294 0020 6C6F6E67 		.ascii	"long unsigned int\000"
- 294      20756E73 
- 294      69676E65 
- 294      6420696E 
- 294      7400
- 295              	.LASF16:
- 296 0032 2F686F6D 		.ascii	"/home/luis/Desktop/Polytech/IESE3/Microcontroleur/P"
- 296      652F6C75 
- 296      69732F44 
- 296      65736B74 
- 296      6F702F50 
- 297 0065 726F6A65 		.ascii	"roject_boite_musique/c_project/\000"
- 297      63745F62 
- 297      6F697465 
- 297      5F6D7573 
- 297      69717565 
- 298              	.LASF7:
- 299 0085 6C6F6E67 		.ascii	"long long unsigned int\000"
- 299      206C6F6E 
- 299      6720756E 
- 299      7369676E 
- 299      65642069 
- 300              	.LASF15:
- 301 009c 7372632F 		.ascii	"src/main.c\000"
- 301      6D61696E 
- 301      2E6300
- 302              	.LASF12:
- 303 00a7 6469655F 		.ascii	"die_forelle\000"
- 303      666F7265 
- 303      6C6C6500 
- 304              	.LASF1:
- 305 00b3 756E7369 		.ascii	"unsigned char\000"
- 305      676E6564 
- 305      20636861 
- 305      7200
- 306              	.LASF13:
- 307 00c1 696E6974 		.ascii	"init_timer_buzzer\000"
- 307      5F74696D 
- 307      65725F62 
- 307      757A7A65 
- 307      7200
- 308              	.LASF9:
- 309 00d3 63686172 		.ascii	"char\000"
- 309      00
- 310              	.LASF4:
- 311 00d8 6C6F6E67 		.ascii	"long int\000"
- 311      20696E74 
- 311      00
- 312              	.LASF11:
- 313 00e1 646F7562 		.ascii	"double\000"
- 313      6C6500
- 314              	.LASF14:
- 315 00e8 474E5520 		.ascii	"GNU C99 13.3.1 20240614 -mtune=cortex-m4 -mthumb -m"
- 315      43393920 
- 315      31332E33 
- 315      2E312032 
- 315      30323430 
- 316 011b 666C6F61 		.ascii	"float-abi=hard -mfpu=fpv4-sp-d16 -march=armv7e-m+fp"
- 316      742D6162 
- 316      693D6861 
- 316      7264202D 
- 316      6D667075 
- 317 014e 202D6720 		.ascii	" -g -O0 -Os -std=gnu99 -fsingle-precision-constant\000"
- 317      2D4F3020 
- 317      2D4F7320 
- 317      2D737464 
- 317      3D676E75 
- 318              	.LASF3:
- 319 0181 73686F72 		.ascii	"short unsigned int\000"
- 319      7420756E 
- 319      7369676E 
- 319      65642069 
- 319      6E7400
- 320              	.LASF0:
- 321 0194 7369676E 		.ascii	"signed char\000"
- 321      65642063 
- 321      68617200 
- 322              	.LASF10:
- 323 01a0 666C6F61 		.ascii	"float\000"
- 323      7400
- 324              	.LASF2:
- 325 01a6 73686F72 		.ascii	"short int\000"
- 325      7420696E 
- 325      7400
- 326              		.ident	"GCC: (GNU Tools for STM32 13.3.rel1.20250523-0900) 13.3.1 20240614"
+  14:src/main.c    ****   init_IRQ_PC13();
+  42              		.loc 1 14 3 is_stmt 1 view .LVU4
+  43 0006 FFF7FEFF 		bl	init_IRQ_PC13
+  44              	.LVL1:
+  15:src/main.c    ****   init_led_tricolore();
+  45              		.loc 1 15 3 view .LVU5
+  46 000a FFF7FEFF 		bl	init_led_tricolore
+  47              	.LVL2:
+  16:src/main.c    ****   configuration_potentiometre();
+  48              		.loc 1 16 3 view .LVU6
+  49 000e FFF7FEFF 		bl	configuration_potentiometre
+  50              	.LVL3:
+  51              	.L2:
+  17:src/main.c    ****   while (1)
+  52              		.loc 1 17 3 view .LVU7
+  18:src/main.c    ****   {
+  19:src/main.c    **** 	  choix_musique();
+  53              		.loc 1 19 4 discriminator 1 view .LVU8
+  54 0012 FFF7FEFF 		bl	choix_musique
+  55              	.LVL4:
+  17:src/main.c    ****   while (1)
+  56              		.loc 1 17 9 view .LVU9
+  57 0016 FCE7     		b	.L2
+  58              		.cfi_endproc
+  59              	.LFE400:
+  60              		.size	main, .-main
+  61              		.text
+  62              	.Letext0:
+  63              		.file 2 "src/sys/musique.h"
+  64              		.file 3 "src/sys/potentiometer.h"
+  65              		.file 4 "src/sys/timer.h"
+  66              		.section	.debug_info,"",%progbits
+  67              	.Ldebug_info0:
+  68 0000 03010000 		.4byte	0x103
+  69 0004 0500     		.2byte	0x5
+  70 0006 01       		.byte	0x1
+  71 0007 04       		.byte	0x4
+  72 0008 00000000 		.4byte	.Ldebug_abbrev0
+  73 000c 05       		.uleb128 0x5
+  74 000d 01010000 		.4byte	.LASF17
+  75 0011 0C       		.byte	0xc
+  76 0012 C1000000 		.4byte	.LASF18
+  77 0016 2E000000 		.4byte	.LASF19
+  78 001a 0C000000 		.4byte	.LLRL0
+  79 001e 00000000 		.4byte	0
+  80 0022 00000000 		.4byte	.Ldebug_line0
+  81 0026 01       		.uleb128 0x1
+  82 0027 01       		.byte	0x1
+  83 0028 06       		.byte	0x6
+  84 0029 E7010000 		.4byte	.LASF0
+  85 002d 01       		.uleb128 0x1
+  86 002e 01       		.byte	0x1
+  87 002f 08       		.byte	0x8
+  88 0030 CC000000 		.4byte	.LASF1
+  89 0034 01       		.uleb128 0x1
+  90 0035 02       		.byte	0x2
+  91 0036 05       		.byte	0x5
+  92 0037 DD010000 		.4byte	.LASF2
+  93 003b 01       		.uleb128 0x1
+  94 003c 02       		.byte	0x2
+  95 003d 07       		.byte	0x7
+  96 003e 9A010000 		.4byte	.LASF3
+  97 0042 01       		.uleb128 0x1
+  98 0043 04       		.byte	0x4
+  99 0044 05       		.byte	0x5
+ 100 0045 F1000000 		.4byte	.LASF4
+ 101 0049 01       		.uleb128 0x1
+ 102 004a 04       		.byte	0x4
+ 103 004b 07       		.byte	0x7
+ 104 004c 98000000 		.4byte	.LASF5
+ 105 0050 01       		.uleb128 0x1
+ 106 0051 08       		.byte	0x8
+ 107 0052 05       		.byte	0x5
+ 108 0053 00000000 		.4byte	.LASF6
+ 109 0057 01       		.uleb128 0x1
+ 110 0058 08       		.byte	0x8
+ 111 0059 07       		.byte	0x7
+ 112 005a AA000000 		.4byte	.LASF7
+ 113 005e 06       		.uleb128 0x6
+ 114 005f 04       		.byte	0x4
+ 115 0060 05       		.byte	0x5
+ 116 0061 696E7400 		.ascii	"int\000"
+ 117 0065 01       		.uleb128 0x1
+ 118 0066 04       		.byte	0x4
+ 119 0067 07       		.byte	0x7
+ 120 0068 1C000000 		.4byte	.LASF8
+ 121 006c 01       		.uleb128 0x1
+ 122 006d 01       		.byte	0x1
+ 123 006e 08       		.byte	0x8
+ 124 006f EC000000 		.4byte	.LASF9
+ 125 0073 01       		.uleb128 0x1
+ 126 0074 04       		.byte	0x4
+ 127 0075 04       		.byte	0x4
+ 128 0076 D7010000 		.4byte	.LASF10
+ 129 007a 01       		.uleb128 0x1
+ 130 007b 08       		.byte	0x8
+ 131 007c 04       		.byte	0x4
+ 132 007d FA000000 		.4byte	.LASF11
+ 133 0081 02       		.uleb128 0x2
+ 134 0082 0E000000 		.4byte	.LASF12
+ 135 0086 02       		.byte	0x2
+ 136 0087 0A       		.byte	0xa
+ 137 0088 8E000000 		.4byte	0x8e
+ 138 008c 03       		.uleb128 0x3
+ 139 008d 00       		.byte	0
+ 140 008e 02       		.uleb128 0x2
+ 141 008f BB010000 		.4byte	.LASF13
+ 142 0093 03       		.byte	0x3
+ 143 0094 06       		.byte	0x6
+ 144 0095 9B000000 		.4byte	0x9b
+ 145 0099 03       		.uleb128 0x3
+ 146 009a 00       		.byte	0
+ 147 009b 02       		.uleb128 0x2
+ 148 009c 85000000 		.4byte	.LASF14
+ 149 00a0 04       		.byte	0x4
+ 150 00a1 0A       		.byte	0xa
+ 151 00a2 A8000000 		.4byte	0xa8
+ 152 00a6 03       		.uleb128 0x3
+ 153 00a7 00       		.byte	0
+ 154 00a8 02       		.uleb128 0x2
+ 155 00a9 AD010000 		.4byte	.LASF15
+ 156 00ad 04       		.byte	0x4
+ 157 00ae 16       		.byte	0x16
+ 158 00af B5000000 		.4byte	0xb5
+ 159 00b3 03       		.uleb128 0x3
+ 160 00b4 00       		.byte	0
+ 161 00b5 02       		.uleb128 0x2
+ 162 00b6 DA000000 		.4byte	.LASF16
+ 163 00ba 04       		.byte	0x4
+ 164 00bb 0C       		.byte	0xc
+ 165 00bc C2000000 		.4byte	0xc2
+ 166 00c0 03       		.uleb128 0x3
+ 167 00c1 00       		.byte	0
+ 168 00c2 07       		.uleb128 0x7
+ 169 00c3 29000000 		.4byte	.LASF20
+ 170 00c7 01       		.byte	0x1
+ 171 00c8 0C       		.byte	0xc
+ 172 00c9 05       		.byte	0x5
+ 173 00ca 5E000000 		.4byte	0x5e
+ 174 00ce 00000000 		.4byte	.LFB400
+ 175 00d2 18000000 		.4byte	.LFE400-.LFB400
+ 176 00d6 01       		.uleb128 0x1
+ 177 00d7 9C       		.byte	0x9c
+ 178 00d8 04       		.uleb128 0x4
+ 179 00d9 06000000 		.4byte	.LVL0
+ 180 00dd B5000000 		.4byte	0xb5
+ 181 00e1 04       		.uleb128 0x4
+ 182 00e2 0A000000 		.4byte	.LVL1
+ 183 00e6 A8000000 		.4byte	0xa8
+ 184 00ea 04       		.uleb128 0x4
+ 185 00eb 0E000000 		.4byte	.LVL2
+ 186 00ef 9B000000 		.4byte	0x9b
+ 187 00f3 04       		.uleb128 0x4
+ 188 00f4 12000000 		.4byte	.LVL3
+ 189 00f8 8E000000 		.4byte	0x8e
+ 190 00fc 04       		.uleb128 0x4
+ 191 00fd 16000000 		.4byte	.LVL4
+ 192 0101 81000000 		.4byte	0x81
+ 193 0105 00       		.byte	0
+ 194 0106 00       		.byte	0
+ 195              		.section	.debug_abbrev,"",%progbits
+ 196              	.Ldebug_abbrev0:
+ 197 0000 01       		.uleb128 0x1
+ 198 0001 24       		.uleb128 0x24
+ 199 0002 00       		.byte	0
+ 200 0003 0B       		.uleb128 0xb
+ 201 0004 0B       		.uleb128 0xb
+ 202 0005 3E       		.uleb128 0x3e
+ 203 0006 0B       		.uleb128 0xb
+ 204 0007 03       		.uleb128 0x3
+ 205 0008 0E       		.uleb128 0xe
+ 206 0009 00       		.byte	0
+ 207 000a 00       		.byte	0
+ 208 000b 02       		.uleb128 0x2
+ 209 000c 2E       		.uleb128 0x2e
+ 210 000d 01       		.byte	0x1
+ 211 000e 3F       		.uleb128 0x3f
+ 212 000f 19       		.uleb128 0x19
+ 213 0010 03       		.uleb128 0x3
+ 214 0011 0E       		.uleb128 0xe
+ 215 0012 3A       		.uleb128 0x3a
+ 216 0013 0B       		.uleb128 0xb
+ 217 0014 3B       		.uleb128 0x3b
+ 218 0015 0B       		.uleb128 0xb
+ 219 0016 39       		.uleb128 0x39
+ 220 0017 21       		.uleb128 0x21
+ 221 0018 06       		.sleb128 6
+ 222 0019 3C       		.uleb128 0x3c
+ 223 001a 19       		.uleb128 0x19
+ 224 001b 01       		.uleb128 0x1
+ 225 001c 13       		.uleb128 0x13
+ 226 001d 00       		.byte	0
+ 227 001e 00       		.byte	0
+ 228 001f 03       		.uleb128 0x3
+ 229 0020 18       		.uleb128 0x18
+ 230 0021 00       		.byte	0
+ 231 0022 00       		.byte	0
+ 232 0023 00       		.byte	0
+ 233 0024 04       		.uleb128 0x4
+ 234 0025 48       		.uleb128 0x48
+ 235 0026 00       		.byte	0
+ 236 0027 7D       		.uleb128 0x7d
+ 237 0028 01       		.uleb128 0x1
+ 238 0029 7F       		.uleb128 0x7f
+ 239 002a 13       		.uleb128 0x13
+ 240 002b 00       		.byte	0
+ 241 002c 00       		.byte	0
+ 242 002d 05       		.uleb128 0x5
+ 243 002e 11       		.uleb128 0x11
+ 244 002f 01       		.byte	0x1
+ 245 0030 25       		.uleb128 0x25
+ 246 0031 0E       		.uleb128 0xe
+ 247 0032 13       		.uleb128 0x13
+ 248 0033 0B       		.uleb128 0xb
+ 249 0034 03       		.uleb128 0x3
+ 250 0035 0E       		.uleb128 0xe
+ 251 0036 1B       		.uleb128 0x1b
+ 252 0037 0E       		.uleb128 0xe
+ 253 0038 55       		.uleb128 0x55
+ 254 0039 17       		.uleb128 0x17
+ 255 003a 11       		.uleb128 0x11
+ 256 003b 01       		.uleb128 0x1
+ 257 003c 10       		.uleb128 0x10
+ 258 003d 17       		.uleb128 0x17
+ 259 003e 00       		.byte	0
+ 260 003f 00       		.byte	0
+ 261 0040 06       		.uleb128 0x6
+ 262 0041 24       		.uleb128 0x24
+ 263 0042 00       		.byte	0
+ 264 0043 0B       		.uleb128 0xb
+ 265 0044 0B       		.uleb128 0xb
+ 266 0045 3E       		.uleb128 0x3e
+ 267 0046 0B       		.uleb128 0xb
+ 268 0047 03       		.uleb128 0x3
+ 269 0048 08       		.uleb128 0x8
+ 270 0049 00       		.byte	0
+ 271 004a 00       		.byte	0
+ 272 004b 07       		.uleb128 0x7
+ 273 004c 2E       		.uleb128 0x2e
+ 274 004d 01       		.byte	0x1
+ 275 004e 3F       		.uleb128 0x3f
+ 276 004f 19       		.uleb128 0x19
+ 277 0050 03       		.uleb128 0x3
+ 278 0051 0E       		.uleb128 0xe
+ 279 0052 3A       		.uleb128 0x3a
+ 280 0053 0B       		.uleb128 0xb
+ 281 0054 3B       		.uleb128 0x3b
+ 282 0055 0B       		.uleb128 0xb
+ 283 0056 39       		.uleb128 0x39
+ 284 0057 0B       		.uleb128 0xb
+ 285 0058 49       		.uleb128 0x49
+ 286 0059 13       		.uleb128 0x13
+ 287 005a 11       		.uleb128 0x11
+ 288 005b 01       		.uleb128 0x1
+ 289 005c 12       		.uleb128 0x12
+ 290 005d 06       		.uleb128 0x6
+ 291 005e 40       		.uleb128 0x40
+ 292 005f 18       		.uleb128 0x18
+ 293 0060 7A       		.uleb128 0x7a
+ 294 0061 19       		.uleb128 0x19
+ 295 0062 00       		.byte	0
+ 296 0063 00       		.byte	0
+ 297 0064 00       		.byte	0
+ 298              		.section	.debug_aranges,"",%progbits
+ 299 0000 1C000000 		.4byte	0x1c
+ 300 0004 0200     		.2byte	0x2
+ 301 0006 00000000 		.4byte	.Ldebug_info0
+ 302 000a 04       		.byte	0x4
+ 303 000b 00       		.byte	0
+ 304 000c 0000     		.2byte	0
+ 305 000e 0000     		.2byte	0
+ 306 0010 00000000 		.4byte	.LFB400
+ 307 0014 18000000 		.4byte	.LFE400-.LFB400
+ 308 0018 00000000 		.4byte	0
+ 309 001c 00000000 		.4byte	0
+ 310              		.section	.debug_rnglists,"",%progbits
+ 311              	.Ldebug_ranges0:
+ 312 0000 0F000000 		.4byte	.Ldebug_ranges3-.Ldebug_ranges2
+ 313              	.Ldebug_ranges2:
+ 314 0004 0500     		.2byte	0x5
+ 315 0006 04       		.byte	0x4
+ 316 0007 00       		.byte	0
+ 317 0008 00000000 		.4byte	0
+ 318              	.LLRL0:
+ 319 000c 07       		.byte	0x7
+ 320 000d 00000000 		.4byte	.LFB400
+ 321 0011 18       		.uleb128 .LFE400-.LFB400
+ 322 0012 00       		.byte	0
+ 323              	.Ldebug_ranges3:
+ 324              		.section	.debug_line,"",%progbits
+ 325              	.Ldebug_line0:
+ 326 0000 84000000 		.section	.debug_str,"MS",%progbits,1
+ 326      03005400 
+ 326      00000201 
+ 326      FB0E0D00 
+ 326      01010101 
+ 327              	.LASF6:
+ 328 0000 6C6F6E67 		.ascii	"long long int\000"
+ 328      206C6F6E 
+ 328      6720696E 
+ 328      7400
+ 329              	.LASF12:
+ 330 000e 63686F69 		.ascii	"choix_musique\000"
+ 330      785F6D75 
+ 330      73697175 
+ 330      6500
+ 331              	.LASF8:
+ 332 001c 756E7369 		.ascii	"unsigned int\000"
+ 332      676E6564 
+ 332      20696E74 
+ 332      00
+ 333              	.LASF20:
+ 334 0029 6D61696E 		.ascii	"main\000"
+ 334      00
+ 335              	.LASF19:
+ 336 002e 2F686F6D 		.ascii	"/home/luis/Desktop/Polytech/IESE3/Microcontroleur/P"
+ 336      652F6C75 
+ 336      69732F44 
+ 336      65736B74 
+ 336      6F702F50 
+ 337 0061 726F6A65 		.ascii	"roject_boite_musique/c_project_BAM/\000"
+ 337      63745F62 
+ 337      6F697465 
+ 337      5F6D7573 
+ 337      69717565 
+ 338              	.LASF14:
+ 339 0085 696E6974 		.ascii	"init_led_tricolore\000"
+ 339      5F6C6564 
+ 339      5F747269 
+ 339      636F6C6F 
+ 339      726500
+ 340              	.LASF5:
+ 341 0098 6C6F6E67 		.ascii	"long unsigned int\000"
+ 341      20756E73 
+ 341      69676E65 
+ 341      6420696E 
+ 341      7400
+ 342              	.LASF7:
+ 343 00aa 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 343      206C6F6E 
+ 343      6720756E 
+ 343      7369676E 
+ 343      65642069 
+ 344              	.LASF18:
+ 345 00c1 7372632F 		.ascii	"src/main.c\000"
+ 345      6D61696E 
+ 345      2E6300
+ 346              	.LASF1:
+ 347 00cc 756E7369 		.ascii	"unsigned char\000"
+ 347      676E6564 
+ 347      20636861 
+ 347      7200
+ 348              	.LASF16:
+ 349 00da 696E6974 		.ascii	"init_timer_buzzer\000"
+ 349      5F74696D 
+ 349      65725F62 
+ 349      757A7A65 
+ 349      7200
+ 350              	.LASF9:
+ 351 00ec 63686172 		.ascii	"char\000"
+ 351      00
+ 352              	.LASF4:
+ 353 00f1 6C6F6E67 		.ascii	"long int\000"
+ 353      20696E74 
+ 353      00
+ 354              	.LASF11:
+ 355 00fa 646F7562 		.ascii	"double\000"
+ 355      6C6500
+ 356              	.LASF17:
+ 357 0101 474E5520 		.ascii	"GNU C99 13.3.1 20240614 -mtune=cortex-m4 -mthumb -m"
+ 357      43393920 
+ 357      31332E33 
+ 357      2E312032 
+ 357      30323430 
+ 358 0134 666C6F61 		.ascii	"float-abi=hard -mfpu=fpv4-sp-d16 -march=armv7e-m+fp"
+ 358      742D6162 
+ 358      693D6861 
+ 358      7264202D 
+ 358      6D667075 
+ 359 0167 202D6720 		.ascii	" -g -O0 -Os -std=gnu99 -fsingle-precision-constant\000"
+ 359      2D4F3020 
+ 359      2D4F7320 
+ 359      2D737464 
+ 359      3D676E75 
+ 360              	.LASF3:
+ 361 019a 73686F72 		.ascii	"short unsigned int\000"
+ 361      7420756E 
+ 361      7369676E 
+ 361      65642069 
+ 361      6E7400
+ 362              	.LASF15:
+ 363 01ad 696E6974 		.ascii	"init_IRQ_PC13\000"
+ 363      5F495251 
+ 363      5F504331 
+ 363      3300
+ 364              	.LASF13:
+ 365 01bb 636F6E66 		.ascii	"configuration_potentiometre\000"
+ 365      69677572 
+ 365      6174696F 
+ 365      6E5F706F 
+ 365      74656E74 
+ 366              	.LASF10:
+ 367 01d7 666C6F61 		.ascii	"float\000"
+ 367      7400
+ 368              	.LASF2:
+ 369 01dd 73686F72 		.ascii	"short int\000"
+ 369      7420696E 
+ 369      7400
+ 370              	.LASF0:
+ 371 01e7 7369676E 		.ascii	"signed char\000"
+ 371      65642063 
+ 371      68617200 
+ 372              		.ident	"GCC: (GNU Tools for STM32 13.3.rel1.20250523-0900) 13.3.1 20240614"
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-     /tmp/ccONo1sV.s:20     .text.startup:00000000 $t
-     /tmp/ccONo1sV.s:26     .text.startup:00000000 main
+     /tmp/ccfxuJtn.s:20     .text.startup:00000000 $t
+     /tmp/ccfxuJtn.s:26     .text.startup:00000000 main
 
 UNDEFINED SYMBOLS
 init_timer_buzzer
-die_forelle
+init_IRQ_PC13
+init_led_tricolore
+configuration_potentiometre
+choix_musique

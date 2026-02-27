@@ -1,13 +1,24 @@
 #include"timer.h"
 #include"devices.h"
 #include "clock.h"
-//#include "notes.h"
+#include "notes.h"
 
+volatile uint8_t cnt = 0;
+
+volatile uint8_t music_changed = 0;
 
 /**
  * @brief On initialise le timer et le buzzer et on les lient l'un à l'autre
  * 
  */
+
+extern void init_led_tricolore()
+{
+	  enable_GPIOA();
+	  GPIOA.MODER &= ~(0x3F<<16);
+	  GPIOA.MODER |= (0x15<<16);
+}
+
 extern void init_timer_buzzer()
 {
 	/* ========== Initialisation buzzer PB9 ========== */
@@ -33,4 +44,54 @@ extern void init_timer_buzzer()
     TIM2.CNT = 0;  // On met les valeurs de CNT à 0
 	TIM2.PSC = 0;
     TIM2.EGR = 1;   // Mise à joure immediat
+}
+
+extern void init_button()
+{
+	enable_GPIOC(); // Activer l'horloge GPIOC
+
+	GPIOC.PUPDR &= ~(3<<26);
+	GPIOC.MODER &= ~(3<<26); // Bouton poussoir PC13 en entrée
+}
+
+extern void select_PC13_as_EXTI13()
+{
+	enable_SYSCFG(); // Activer l'horloge SYSCFG
+
+	SYSCFG.EXTICR4 &= ~(0xF<<4); // Clear
+	SYSCFG.EXTICR4 |= (2<<4); // 0010 car port C
+}
+
+extern void setup_IRQ_on_EXTI13_events() // Configuration pour front descendant (appui sur le bouton)
+{
+	EXTI.IMR  |= (1 << 13);    // Active les interruptions sur la ligne 13
+    EXTI.FTSR |= (1 << 13);    // Active l'interruption pour les fronts descendants
+    EXTI.RTSR &= ~(1 << 13);   // Désactive l'interruption pour les fronts montants
+}
+
+extern void enable_EXTI15_10_IRQ()
+{
+	NVIC.ISER[1] |= (1<<8);
+}
+
+extern void init_IRQ_PC13()
+{
+	init_button();
+	select_PC13_as_EXTI13();
+	setup_IRQ_on_EXTI13_events();
+	enable_EXTI15_10_IRQ();
+}
+
+extern void EXTI15_10_Handler()
+{
+    if(EXTI.PR & (1 << 13))   // Vérifier si c'est bien la ligne 13 qui s'est déclenchée
+    {
+        EXTI.PR |= (1 << 13); // Système Write 1 to clear
+        cnt++;
+        if(cnt > 4)
+        {
+        	cnt = 0;
+        }
+        music_changed = 1;
+    }
 }

@@ -115,10 +115,10 @@
   91 0007 04       		.byte	0x4
   92 0008 00000000 		.4byte	.Ldebug_abbrev0
   93 000c 08       		.uleb128 0x8
-  94 000d 1F010000 		.4byte	.LASF17
+  94 000d 23010000 		.4byte	.LASF17
   95 0011 0C       		.byte	0xc
-  96 0012 1D020000 		.4byte	.LASF18
-  97 0016 59000000 		.4byte	.LASF19
+  96 0012 21020000 		.4byte	.LASF18
+  97 0016 3F000000 		.4byte	.LASF19
   98 001a 00000000 		.4byte	.Ltext0
   99 001e 1A000000 		.4byte	.Letext0-.Ltext0
  100 0022 00000000 		.4byte	.Ldebug_line0
@@ -135,31 +135,31 @@
  111 0039 01       		.uleb128 0x1
  112 003a 04       		.byte	0x4
  113 003b 07       		.byte	0x7
- 114 003c 10020000 		.4byte	.LASF0
+ 114 003c 14020000 		.4byte	.LASF0
  115 0040 01       		.uleb128 0x1
  116 0041 01       		.byte	0x1
  117 0042 06       		.byte	0x6
- 118 0043 CB010000 		.4byte	.LASF1
+ 118 0043 CF010000 		.4byte	.LASF1
  119 0047 01       		.uleb128 0x1
  120 0048 01       		.byte	0x1
  121 0049 08       		.byte	0x8
- 122 004a DB000000 		.4byte	.LASF2
+ 122 004a DF000000 		.4byte	.LASF2
  123 004e 01       		.uleb128 0x1
  124 004f 02       		.byte	0x2
  125 0050 05       		.byte	0x5
- 126 0051 F7010000 		.4byte	.LASF3
+ 126 0051 FB010000 		.4byte	.LASF3
  127 0055 01       		.uleb128 0x1
  128 0056 02       		.byte	0x2
  129 0057 07       		.byte	0x7
- 130 0058 B8010000 		.4byte	.LASF4
+ 130 0058 BC010000 		.4byte	.LASF4
  131 005c 01       		.uleb128 0x1
  132 005d 04       		.byte	0x4
  133 005e 05       		.byte	0x5
- 134 005f 01010000 		.4byte	.LASF5
+ 134 005f 05010000 		.4byte	.LASF5
  135 0063 01       		.uleb128 0x1
  136 0064 04       		.byte	0x4
  137 0065 07       		.byte	0x7
- 138 0066 47000000 		.4byte	.LASF6
+ 138 0066 9E000000 		.4byte	.LASF6
  139 006a 01       		.uleb128 0x1
  140 006b 08       		.byte	0x8
  141 006c 05       		.byte	0x5
@@ -167,24 +167,24 @@
  143 0071 01       		.uleb128 0x1
  144 0072 08       		.byte	0x8
  145 0073 07       		.byte	0x7
- 146 0074 AC000000 		.4byte	.LASF8
+ 146 0074 B7000000 		.4byte	.LASF8
  147 0078 0B       		.uleb128 0xb
  148 0079 04       		.byte	0x4
  149 007a 01       		.uleb128 0x1
  150 007b 01       		.byte	0x1
  151 007c 08       		.byte	0x8
- 152 007d FC000000 		.4byte	.LASF9
+ 152 007d 00010000 		.4byte	.LASF9
  153 0081 04       		.uleb128 0x4
  154 0082 7A000000 		.4byte	0x7a
  155 0086 0C       		.uleb128 0xc
- 156 0087 EB010000 		.4byte	.LASF21
+ 156 0087 EF010000 		.4byte	.LASF21
  157 008b 08       		.byte	0x8
  158 008c 01       		.byte	0x1
  159 008d 0B       		.byte	0xb
  160 008e 08       		.byte	0x8
  161 008f AC000000 		.4byte	0xac
  162 0093 05       		.uleb128 0x5
- 163 0094 D0000000 		.4byte	.LASF10
+ 163 0094 D4000000 		.4byte	.LASF10
  164 0098 0C       		.byte	0xc
  165 0099 09       		.byte	0x9
  166 009a 78000000 		.4byte	0x78
@@ -205,7 +205,7 @@
  181 00b8 07       		.uleb128 0x7
  182 00b9 B1000000 		.4byte	0xb1
  183 00bd 02       		.uleb128 0x2
- 184 00be 3F000000 		.4byte	.LASF12
+ 184 00be 96000000 		.4byte	.LASF12
  185 00c2 10       		.byte	0x10
  186 00c3 0D       		.byte	0xd
  187 00c4 7A000000 		.4byte	0x7a
@@ -219,7 +219,7 @@
  195 00d5 03       		.byte	0x3
  196 00d6 00000000 		.4byte	__boot_sector
  197 00da 0F       		.uleb128 0xf
- 198 00db D7010000 		.4byte	.LASF22
+ 198 00db DB010000 		.4byte	.LASF22
  199 00df 01       		.byte	0x1
  200 00e0 11       		.byte	0x11
  201 00e1 0D       		.byte	0xd
@@ -227,7 +227,7 @@
  203 00e6 06       		.uleb128 0x6
  204 00e7 00       		.byte	0
  205 00e8 10       		.uleb128 0x10
- 206 00e9 0A010000 		.4byte	.LASF23
+ 206 00e9 0E010000 		.4byte	.LASF23
  207 00ed 03       		.byte	0x3
  208 00ee 1F       		.byte	0x1f
  209 00ef 09       		.byte	0x9
@@ -244,7 +244,7 @@
  220 0109 0D010000 		.4byte	0x10d
  221 010d 11       		.uleb128 0x11
  222 010e 12       		.uleb128 0x12
- 223 010f CA000000 		.4byte	.LASF24
+ 223 010f CE000000 		.4byte	.LASF24
  224 0113 01       		.byte	0x1
  225 0114 17       		.byte	0x17
  226 0115 06       		.byte	0x6
@@ -254,7 +254,7 @@
  230 011f 9C       		.byte	0x9c
  231 0120 39010000 		.4byte	0x139
  232 0124 13       		.uleb128 0x13
- 233 0125 C3000000 		.4byte	.LASF25
+ 233 0125 B0000000 		.4byte	.LASF25
  234 0129 01       		.byte	0x1
  235 012a 17       		.byte	0x17
  236 012b 10       		.byte	0x10
@@ -263,7 +263,7 @@
  239 0134 0C000000 		.4byte	.LVUS0
  240 0138 00       		.byte	0
  241 0139 14       		.uleb128 0x14
- 242 013a E9000000 		.4byte	.LASF26
+ 242 013a ED000000 		.4byte	.LASF26
  243 013e 01       		.byte	0x1
  244 013f 03       		.byte	0x3
  245 0140 06       		.byte	0x6
@@ -273,17 +273,17 @@
  249 014a 9C       		.byte	0x9c
  250 014b 7A010000 		.4byte	0x17a
  251 014f 02       		.uleb128 0x2
- 252 0150 11010000 		.4byte	.LASF14
+ 252 0150 15010000 		.4byte	.LASF14
  253 0154 04       		.byte	0x4
  254 0155 15       		.byte	0x15
  255 0156 81000000 		.4byte	0x81
  256 015a 02       		.uleb128 0x2
- 257 015b 01020000 		.4byte	.LASF15
+ 257 015b 05020000 		.4byte	.LASF15
  258 015f 05       		.byte	0x5
  259 0160 0F       		.byte	0xf
  260 0161 7A000000 		.4byte	0x7a
  261 0165 02       		.uleb128 0x2
- 262 0166 DE010000 		.4byte	.LASF16
+ 262 0166 E2010000 		.4byte	.LASF16
  263 016a 06       		.byte	0x6
  264 016b 0F       		.byte	0xf
  265 016c 7A000000 		.4byte	0x7a
@@ -292,7 +292,7 @@
  268 0175 7A010000 		.4byte	0x17a
  269 0179 00       		.byte	0
  270 017a 16       		.uleb128 0x16
- 271 017b 0A010000 		.4byte	.LASF23
+ 271 017b 0E010000 		.4byte	.LASF23
  272 017f 0E000000 		.4byte	.LASF27
  273 0183 04       		.byte	0x4
  274 0184 00       		.byte	0
@@ -682,122 +682,122 @@
  643 0034 696E6974 		.ascii	"initial_PC\000"
  643      69616C5F 
  643      504300
- 644              	.LASF12:
- 645 003f 5F5F7374 		.ascii	"__stack\000"
- 645      61636B00 
- 646              	.LASF6:
- 647 0047 6C6F6E67 		.ascii	"long unsigned int\000"
- 647      20756E73 
- 647      69676E65 
- 647      6420696E 
- 647      7400
- 648              	.LASF19:
- 649 0059 2F686F6D 		.ascii	"/home/luis/Desktop/Polytech/IESE3/Microcontroleur/P"
- 649      652F6C75 
- 649      69732F44 
- 649      65736B74 
- 649      6F702F50 
- 650 008c 726F6A65 		.ascii	"roject_boite_musique/c_project/\000"
- 650      63745F62 
- 650      6F697465 
- 650      5F6D7573 
- 650      69717565 
- 651              	.LASF8:
- 652 00ac 6C6F6E67 		.ascii	"long long unsigned int\000"
- 652      206C6F6E 
- 652      6720756E 
- 652      7369676E 
- 652      65642069 
- 653              	.LASF25:
- 654 00c3 73746174 		.ascii	"status\000"
- 654      757300
+ 644              	.LASF19:
+ 645 003f 2F686F6D 		.ascii	"/home/luis/Desktop/Polytech/IESE3/Microcontroleur/P"
+ 645      652F6C75 
+ 645      69732F44 
+ 645      65736B74 
+ 645      6F702F50 
+ 646 0072 726F6A65 		.ascii	"roject_boite_musique/c_project_BAM/\000"
+ 646      63745F62 
+ 646      6F697465 
+ 646      5F6D7573 
+ 646      69717565 
+ 647              	.LASF12:
+ 648 0096 5F5F7374 		.ascii	"__stack\000"
+ 648      61636B00 
+ 649              	.LASF6:
+ 650 009e 6C6F6E67 		.ascii	"long unsigned int\000"
+ 650      20756E73 
+ 650      69676E65 
+ 650      6420696E 
+ 650      7400
+ 651              	.LASF25:
+ 652 00b0 73746174 		.ascii	"status\000"
+ 652      757300
+ 653              	.LASF8:
+ 654 00b7 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 654      206C6F6E 
+ 654      6720756E 
+ 654      7369676E 
+ 654      65642069 
  655              	.LASF24:
- 656 00ca 5F657869 		.ascii	"_exit\000"
+ 656 00ce 5F657869 		.ascii	"_exit\000"
  656      7400
  657              	.LASF10:
- 658 00d0 696E6974 		.ascii	"initial_SP\000"
+ 658 00d4 696E6974 		.ascii	"initial_SP\000"
  658      69616C5F 
  658      535000
  659              	.LASF2:
- 660 00db 756E7369 		.ascii	"unsigned char\000"
+ 660 00df 756E7369 		.ascii	"unsigned char\000"
  660      676E6564 
  660      20636861 
  660      7200
  661              	.LASF26:
- 662 00e9 68617264 		.ascii	"hardware_init_hook\000"
+ 662 00ed 68617264 		.ascii	"hardware_init_hook\000"
  662      77617265 
  662      5F696E69 
  662      745F686F 
  662      6F6B00
  663              	.LASF9:
- 664 00fc 63686172 		.ascii	"char\000"
+ 664 0100 63686172 		.ascii	"char\000"
  664      00
  665              	.LASF5:
- 666 0101 6C6F6E67 		.ascii	"long int\000"
+ 666 0105 6C6F6E67 		.ascii	"long int\000"
  666      20696E74 
  666      00
  667              	.LASF23:
- 668 010a 6D656D63 		.ascii	"memcpy\000"
+ 668 010e 6D656D63 		.ascii	"memcpy\000"
  668      707900
  669              	.LASF14:
- 670 0111 5F5F6461 		.ascii	"__data_load__\000"
+ 670 0115 5F5F6461 		.ascii	"__data_load__\000"
  670      74615F6C 
  670      6F61645F 
  670      5F00
  671              	.LASF17:
- 672 011f 474E5520 		.ascii	"GNU C99 13.3.1 20240614 -mtune=cortex-m4 -mthumb -m"
+ 672 0123 474E5520 		.ascii	"GNU C99 13.3.1 20240614 -mtune=cortex-m4 -mthumb -m"
  672      43393920 
  672      31332E33 
  672      2E312032 
  672      30323430 
- 673 0152 666C6F61 		.ascii	"float-abi=hard -mfpu=fpv4-sp-d16 -march=armv7e-m+fp"
+ 673 0156 666C6F61 		.ascii	"float-abi=hard -mfpu=fpv4-sp-d16 -march=armv7e-m+fp"
  673      742D6162 
  673      693D6861 
  673      7264202D 
  673      6D667075 
- 674 0185 202D6720 		.ascii	" -g -O0 -Os -std=gnu99 -fsingle-precision-constant\000"
+ 674 0189 202D6720 		.ascii	" -g -O0 -Os -std=gnu99 -fsingle-precision-constant\000"
  674      2D4F3020 
  674      2D4F7320 
  674      2D737464 
  674      3D676E75 
  675              	.LASF4:
- 676 01b8 73686F72 		.ascii	"short unsigned int\000"
+ 676 01bc 73686F72 		.ascii	"short unsigned int\000"
  676      7420756E 
  676      7369676E 
  676      65642069 
  676      6E7400
  677              	.LASF1:
- 678 01cb 7369676E 		.ascii	"signed char\000"
+ 678 01cf 7369676E 		.ascii	"signed char\000"
  678      65642063 
  678      68617200 
  679              	.LASF22:
- 680 01d7 5F737461 		.ascii	"_start\000"
+ 680 01db 5F737461 		.ascii	"_start\000"
  680      727400
  681              	.LASF16:
- 682 01de 5F5F6461 		.ascii	"__data_end__\000"
+ 682 01e2 5F5F6461 		.ascii	"__data_end__\000"
  682      74615F65 
  682      6E645F5F 
  682      00
  683              	.LASF21:
- 684 01eb 626F6F74 		.ascii	"boot_struct\000"
+ 684 01ef 626F6F74 		.ascii	"boot_struct\000"
  684      5F737472 
  684      75637400 
  685              	.LASF3:
- 686 01f7 73686F72 		.ascii	"short int\000"
+ 686 01fb 73686F72 		.ascii	"short int\000"
  686      7420696E 
  686      7400
  687              	.LASF15:
- 688 0201 5F5F6461 		.ascii	"__data_start__\000"
+ 688 0205 5F5F6461 		.ascii	"__data_start__\000"
  688      74615F73 
  688      74617274 
  688      5F5F00
  689              	.LASF0:
- 690 0210 756E7369 		.ascii	"unsigned int\000"
+ 690 0214 756E7369 		.ascii	"unsigned int\000"
  690      676E6564 
  690      20696E74 
  690      00
  691              	.LASF18:
- 692 021d 7372632F 		.ascii	"src/boot/startup.c\000"
+ 692 0221 7372632F 		.ascii	"src/boot/startup.c\000"
  692      626F6F74 
  692      2F737461 
  692      72747570 
@@ -805,13 +805,13 @@
  693              		.ident	"GCC: (GNU Tools for STM32 13.3.rel1.20250523-0900) 13.3.1 20240614"
 DEFINED SYMBOLS
                             *ABS*:00000000 startup.c
-     /tmp/ccbDIyLv.s:19     .text:00000000 $t
-     /tmp/ccbDIyLv.s:25     .text:00000000 hardware_init_hook
-     /tmp/ccbDIyLv.s:45     .text:0000000c $d
-     /tmp/ccbDIyLv.s:51     .text:00000018 $t
-     /tmp/ccbDIyLv.s:57     .text:00000018 _exit
-     /tmp/ccbDIyLv.s:78     boot:00000000 __boot_sector
-     /tmp/ccbDIyLv.s:75     boot:00000000 $d
+     /tmp/ccYUMugc.s:19     .text:00000000 $t
+     /tmp/ccYUMugc.s:25     .text:00000000 hardware_init_hook
+     /tmp/ccYUMugc.s:45     .text:0000000c $d
+     /tmp/ccYUMugc.s:51     .text:00000018 $t
+     /tmp/ccYUMugc.s:57     .text:00000018 _exit
+     /tmp/ccYUMugc.s:78     boot:00000000 __boot_sector
+     /tmp/ccYUMugc.s:75     boot:00000000 $d
 
 UNDEFINED SYMBOLS
 memcpy

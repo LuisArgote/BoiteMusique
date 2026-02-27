@@ -7,17 +7,16 @@
 #include "sys/timer.h"
 #include "sys/notes.h"
 #include "sys/musique.h"
-
+#include "sys/potentiometer.h"
 
 int main() {
   init_timer_buzzer();
+  init_IRQ_PC13();
+  init_led_tricolore();
+  configuration_potentiometre();
   while (1)
   {
-	  die_forelle();
+	  choix_musique();
   }
-  
   return 0;
 }
-
-
-
